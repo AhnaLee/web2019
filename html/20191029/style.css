@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*site color*/
+body {
+background-color: skyblue;
+}
+h3 {
+color: purple;
+}
+hr {
+border: 5px solid yellow;
+}
+span {
+color: blue; 
+font-size: 20px;
+}
