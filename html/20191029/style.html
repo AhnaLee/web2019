@@ -7,6 +7,17 @@
 	<!-- link:css -->
 		<link rel="stylesheet" href="style.css">
 	<!-- 	<link rel="stylesheet" href="common.css"> -->
+	<style>
+		div {
+			color:red;
+		}
+		div.box {
+			color: blue;
+		} /* class 지정은 . 으로 한다 class 는 복수설정가능 .box {color:blue;} 와같다 */
+		div#vbox {
+			color: black;
+		} /* id 셀렉터 지정은 # 으로 한다 id는 단수로만 설정가능 #vbox {color:black;} 와같다*/
+	</style>
 </head>
 <body>
 	<h3>스타일 맛보기</h3>
@@ -25,5 +36,22 @@
 		<!-- (div>lorem2)+(div>lorem2) -->
 	<!-- 	<div>Lorem ipsum.</div>
 		<div>Lorem ipsum.</div> --> 
+
+		<div>Lorem ipsum.</div>
+		<div>Eligendi, necessitatibus.</div>
+		<div class="box">Aut, mollitia.</div>
+		<div>Consequuntur, omnis.</div>
+		<div>Ea, deleniti.</div>
+		<div class="box">Quidem, quaerat.</div>
+		<div>Sint, quo?</div>
+		<div>Distinctio, illum?</div>
+		<div class="box" id="vbox">Id, vel.</div>
+		<div>Vel, sint.</div>
+
+		<!-- div.box#vbox1 -->
+		<div class="box" id="vbox1"></div>
+		<!-- div.box#vbox2>a[#]>{menu} -->
+		<div class="box" id="vbox2"><a href="#">menu</a></div>
+
 </body>
 </html>
