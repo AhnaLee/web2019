@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>style</title>
+	<style>
+		/*div {
+			background-color: blue;
+			margin: 10px;
+		}
+		div.box, p.box {
+			background-color: skyblue;
+		}*/
+		/*#vbox {
+			background-color: pink;
+		/*}*/ /*컨트롤+쉬프트 대괄호 왼쪽은 숨기기 대괄호 오른쪽은 다시보이기 */
+
+	/*.box > ul> li > strong {
+		color: red;
+	} */
+	.box ul strong {
+		color: red;
+	}
+	.box div strong {
+		color: blue;
+	}
+	ul strong {
+		color: pink;
+	}
+	.box > div:first-letter {
+		color: red;
+	}
+	ul.menu > li:hover {
+		background-color: skyblue;
+		color:yellow;
+		font-weight: bold;
+	}
+	ul.menu > li:active {
+		background-color: red;
+	}
+	.olive {
+		color: olivedrab;
+	}
+	</style>
+</head>
+<body>
+<!-- 	<div>Lorem ipsum dolor sit amet.</div>
+	<div class="box">Lorem ipsum dolor sit amet.</div>
+	<div class="box">Lorem ipsum dolor sit amet.</div>
+	<div class="box" id="vbox" style="background-color: red">Lorem ipsum dolor sit amet.</div>
+	<p class="box">Lorem ipsum dolor sit amet.</p>
+	 -->
+	 <div class="box">
+	 	<div class="olive">Lorem <strong>ipsum dolor</strong> sit amet.</div>
+	 	<ul class="menu">
+	 		<!--ul>li*3{title$}-->
+	 		<li>title1</li>
+	 		<li><strong>title2</strong></li>
+	 		<li>title3</li>
+	 	</ul>
+	 	<div class="olive">Lorem ipsum dolor sit amet.</div>
+	 </div>
+	 <hr>
+	 <ul>
+	 		<li>title1</li>
+	 		<li><strong>title2</strong></li>
+	 		<li>title3</li>
+	 </ul>
+	 <style>
+	 	a {
+	 		text-decoration: none; 
+	 		background-color: #ffff00;
+	 		display: block; 
+	 		width: 100px; 
+	 		text-align: center; 
+	 	}
+	 	a:link,a:visited {
+	 		color: black;
+	 	}
+	 	a:hover {
+	 		color: gray; 
+	 		font-weight: bold;
+	 	}
+	 	a:active {
+	 		color: skyblue;
+	 	}
+	 	h3 { 
+	 		background-color: #00ffff;  
+	 		width: 300px; height: 30px;
+	 	}
+	 </style>
+	 <h3>
+	 	<a href="#">menu</a>
+	 </h3>
+</body>
+</html>
