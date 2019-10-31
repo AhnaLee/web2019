@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		* {
+			margin: 0;
+		}
+		body {
+			background-image: url(../images/bg_grid.gif);
+			/*background-repeat: no-repeat | repeat-x | repeat-y */
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: rgb(255,0,0);
+			/*opacity: 0.5; 자손색깔 (전체적인) 까지 색이 투명해짐 */
+			padding: 10px;
+			margin: 10px;
+			border: 10px solid #000;
+		}
+		 /*.box1 {
+			width: 200px;
+			height: 200px;
+			background-color: rgba(255,0,0,0.5);
+			/* a 투명도 를 붙임으로써 배경색깔을 투명하게 바꿔줌 
+			display: none;
+		} */
+		div.wrap {
+			width: 800px;
+			height: 
+		}
+		div.wrap > div {
+			width: 200px;
+			height: 100px;
+			box-sizing: border-box; /* 박스안쪽으로 패딩이나 보더 자리를 사용함 마진은 적용되지 않음 */
+			float: left;
+			padding: 10px;
+			 /* float를 사용하면 블럭사이에 공간이 없음 자리가 넘치면 빈공간을 채움 */
+			/* display: inline-block; 블럭 사이에 공간이 생김 margin 을 이용해 left/right -숫자로 간격을 없애야함 */
+		}
+		div.wrap > div.box1 {
+		/*	width: 200px;
+			height: 100px;*/
+			background-color: blue;
+		}
+		div.wrap > div.box2 {
+			/*width: 200px;
+			height: 100px;*/
+			background-color: red;
+		}
+		div.wrap > div.box3 {
+			/*width: 200px;
+			height: 100px;*/
+			background-color: green;
+		}
+		div.wrap > div.box4 {
+			/*width: 200px;
+			height: 100px;*/
+			background-color: gray;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="box">box</div>
+	<!-- <div class="box1">box</div> -->
+
+	<div class="wrap">
+		<!-- .box$*4>{box$} -->
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+		<div class="box4">box4</div>
+	</div>
+	<div class="wrap">
+		<ul>
+			<li>box1</li>
+			<li>box2</li>
+			<li>box3</li>
+			<li>box4</li>
+		</ul>
+	</div>
+</body>
+</html>
