@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Float Menu</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		.clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		div.container {
+			background-color: #ff1f45;
+		}
+		.wrap { 
+			width: 800px;
+			height: 50px;
+			margin: 0 auto;
+			/*background-color: blue;*/
+		 }
+		div.wrap > ul > li {
+			float: left;
+			width: 160px;
+			/*height: 10px;*/
+			text-align: center;
+			line-height: 50px;
+			color: #fff;
+			cursor: pointer;
+			/*a태그가잇으면 커서포인트는 필요없음.*/
+			/*border: 1px solid pink;
+			border-radius: 10px;*/
+		}
+		div.wrap > ul > li:hover {
+			background-color: #ffaa45;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		a:link, a:visited {
+			color: black;
+		}
+		div.con_wrap {
+			background-color: black;
+		}
+		div.wrapper {
+			width: 800px;
+			height: 50px;
+			margin: 0 auto;
+		}
+		div.wrapper > ul >li {
+			float: left;
+			width: 20%;
+		}
+		div.wrapper > ul >li a {
+			display: block;
+			text-align: center;
+			line-height: 50px;
+			background-color: gray;
+			color: white;
+		}
+		div.wrapper > ul > li > a:hover {
+			background-color: white;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="wrap">
+	<ul class="clearfix">
+		<li>Menu1</li>
+		<li>Menu2</li>
+		<li>Menu3</li>
+		<li>Menu4</li>
+		<li>Menu5</li>
+	</ul>
+	</div>
+	</div>
+	<div class="con_wrap">
+		<div class="wrapper">
+			<!-- ul>li*5>a[#]>{MENU$} -->
+			<ul class= "clearfix">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
