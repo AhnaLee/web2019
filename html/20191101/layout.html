@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:link, a:visited {
+			color: black;
+		}
+		/*ul.clearfix {
+			content: "";
+			display: block;
+			clear: both;
+		}*/
+		header#hd {
+			width: 1000px;
+			height: 100px;
+			margin: 0 auto; /*가운데정렬*/
+			background-color: pink;
+			position: relative;
+		}
+		#hd > h1 {
+			/*background-color: red;*/
+			margin: 0 auto;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+		}
+		nav.navbar {
+			width: 1000px; /*100%*/
+			background-color: skyblue;
+			position: absolute;
+			bottom: 0;
+		}
+		nav.navbar> ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		nav.navbar> ul> li {
+			float: left;
+			width: 200px;
+		}
+		nav.navbar> ul> li > a {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+		nav.navbar > ul> li> a:hover {
+			background-color: gray;
+			color: white;
+		}
+		/*slide area*/
+		div.container {
+			background-color: black;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1>GUCCI</h1>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		
+	</div>
+</body>
+</html>
