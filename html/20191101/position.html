@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		/*css reset tag*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		body {
+			background-image: url(../images/bg_grid.gif);
+		}
+		div {
+			width: 200px; 
+			height: 200px;
+		}
+		div.box1 {
+			background-color: #f00;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			z-index: 2;
+		}
+		div.box2 {
+			background-color: #00f;
+			position: absolute;
+			left: 150px;
+			top: 150px;
+			z-index: 1;
+		}
+		div.box3 {
+			background-color: #0f0;
+			position: absolute;
+			left: 200px;
+			top: 200px;
+			z-index: 1;
+		}
+		div.fix {
+			width: 100%;
+			height: 50px;
+			background-color: #ccc;
+			position: fixed;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<div class="fix">menu 포지션 픽스트 z-index 3</div>
+	<div class="box1">box1 포지션 앱솔룻트 z-index2</div>
+	<div class="box2">box1</div>
+	<!-- 먼저 만들어진 박스가 밑에깔리고 밑에 만들어진 박스가 위로 올라옴  -->
+	<div class="box3">box1</div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati culpa dolorem voluptatum, adipisci consectetur velit! Eius cupiditate similique fuga consectetur dolore, deserunt sit dolor doloremque tempore odit officiis! Vitae dolore itaque labore molestias eveniet quis, iste aliquid enim nobis, incidunt nesciunt blanditiis ducimus aliquam accusamus eligendi amet necessitatibus, ab a. Quasi libero illum dolore itaque rem, labore nulla esse minima, voluptas magni impedit iusto, obcaecati dignissimos est rerum fugiat voluptates dolor aspernatur accusamus natus quos! Omnis perspiciatis, officiis laudantium sit dolore nostrum labore, debitis fuga dolores molestias aperiam ducimus. Nisi nobis, sapiente quae exercitationem accusamus harum ducimus saepe voluptate, quas iure voluptas, tenetur sit, quo quibusdam expedita. Sapiente id nihil repellat mollitia repellendus adipisci corporis excepturi dolores, quasi tempore vero, fugiat quo libero aliquid expedita! Impedit ducimus numquam temporibus sint nihil quam. Esse officiis rem nihil, doloribus possimus nostrum. Culpa ab ullam facere accusamus deserunt, tenetur aliquid! Esse fugit dignissimos veniam eligendi dolore perferendis dolores ipsa. Nam minima earum facere, necessitatibus at nulla dolor quae, cumque magnam illum recusandae voluptates! Ad vero repellendus unde quos nam ut consequuntur officiis. Iusto quidem accusamus asperiores omnis corporis! Corporis excepturi libero veniam esse ut praesentium id aperiam voluptate tempore delectus doloribus hic, porro atque, maiores eos nostrum maxime laboriosam possimus natus ab fuga consectetur. Aperiam asperiores dolore blanditiis voluptatibus, libero commodi pariatur ex alias dolorum eveniet! Quos veniam iste aperiam incidunt magnam, ducimus quae expedita esse molestias. Voluptas qui molestias, fuga praesentium? Architecto maxime voluptate totam rem debitis asperiores praesentium optio perspiciatis, sit nulla tenetur. Non eum ea impedit labore. Facilis impedit autem est ipsa assumenda quibusdam cum ad quisquam, eligendi excepturi. Ut voluptate, modi, repudiandae quisquam eligendi, ea assumenda doloremque atque veniam sapiente voluptates! Aut tenetur veritatis ipsam illo consequuntur quam, quas maxime perspiciatis minima voluptates accusantium blanditiis dolor odio accusamus, vero vel ab mollitia! Quam molestiae temporibus doloremque beatae perferendis vero neque facilis nostrum iusto totam quas repellendus expedita dicta, dolorum voluptate blanditiis accusamus sunt numquam repellat eveniet optio hic aliquam voluptatibus, vitae. Optio odit voluptas recusandae, ea suscipit quos. Adipisci veniam quae qui voluptatum architecto quod cum, tempora delectus earum? Adipisci velit consequatur quos blanditiis dolorem quaerat. Beatae, doloribus ipsum mollitia quis! Natus amet rem hic facere accusamus voluptatum itaque, aut, beatae harum magnam nobis tempora. Esse aspernatur ratione, ut, dolores sapiente fugit distinctio beatae excepturi totam facere expedita accusantium repellat quidem placeat perferendis vel tenetur assumenda laudantium laboriosam quam odio possimus soluta quis. Fugit voluptate similique perspiciatis aspernatur natus qui, debitis autem cum aliquid quisquam alias porro unde molestiae nobis eius nam delectus excepturi modi tempore laborum vitae reprehenderit. Atque ut tempora culpa voluptatem, exercitationem rerum non placeat voluptatum. Consequatur, dicta tempore aut labore, placeat, ducimus quod vero perferendis et voluptatibus sequi officiis nisi deserunt a id nesciunt. Officiis id architecto assumenda, distinctio deserunt minus, dolorem libero quas nihil corporis eos enim ratione nisi doloremque itaque nobis iusto quisquam impedit quos qui, incidunt temporibus? Nam autem, omnis? Voluptatem quibusdam dolorem ipsa a odit cum unde, quae? Veniam, architecto, placeat.
+</body>
+</html>
