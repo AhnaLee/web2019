@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout 1st</title>
+	<style>
+		/*css reset*/
+		*{margin:0;padding:0;}
+		li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:#000;}
+		/*no a tag */
+		ul.navFirst{
+			width: 800px;
+			background-color:skyblue;
+			margin:0 auto;
+		}
+		ul.navFirst:after{content:"";clear:both;display:block;}
+		ul.navFirst>li{
+			float:left;width:133.3333px;text-align:center;
+			line-height:40px;
+		}
+		ul.navFirst>li:hover{background-color:blue;color:#fff;}
+		/*a tag*/
+		ul.navSecond{width:800px;margin:0 auto;background-color:pink;}
+		ul.navSecond:after{
+			content:"";display: block;clear: both;
+		}
+		ul.navSecond>li{float:left;width:133.33px;}
+		ul.navSecond>li>a{
+			display: block;text-align:center;
+			line-height:40px;
+		}
+		ul.navSecond>li>a:hover{background-color:red;color:white;}
+	</style>
+</head>
+<body>
+	
+	<!-- <nav class="navWrap"> -->
+		<ul class="navFirst">
+			<li>menu1</li>
+			<li>menu2</li>
+			<li>menu3</li>
+			<li>menu4</li>
+			<li>menu5</li>
+			<li>menu6</li>
+		</ul>
+		
+	<!-- </nav> -->
+
+	<!-- ul.navSecond>li*6>a[#]>{MENU$} -->
+	<ul class="navSecond">
+		<li><a href="#">MENU1</a></li>
+		<li><a href="#">MENU2</a></li>
+		<li><a href="#">MENU3</a></li>
+		<li><a href="#">MENU4</a></li>
+		<li><a href="#">MENU5</a></li>
+		<li><a href="#">MENU6</a></li>
+	</ul>
+</body>
+</html>
