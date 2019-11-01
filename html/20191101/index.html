@@ -6,33 +6,64 @@
 	<title>layout 1st</title>
 	<style>
 		/*css reset*/
-		*{margin:0;padding:0;}
-		li{list-style:none;}
-		a{text-decoration:none;}
-		a:link,a:visited{color:#000;}
+		*{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style:none;
+		}
+		a{
+			text-decoration:none;
+		}
+		a:link,a:visited{
+			color:#000;
+		}
 		/*no a tag */
-		ul.navFirst{
+		ul.navFirst {
 			width: 800px;
 			background-color:skyblue;
 			margin:0 auto;
 		}
-		ul.navFirst:after{content:"";clear:both;display:block;}
+		ul.navFirst:after{
+			content:"";
+			clear:both;
+			display:block;
+		}
 		ul.navFirst>li{
-			float:left;width:133.3333px;text-align:center;
+			float:left;
+			width:133.3333px;
+			text-align:center;
 			line-height:40px;
 		}
-		ul.navFirst>li:hover{background-color:blue;color:#fff;}
+		ul.navFirst>li:hover{
+			background-color:blue;
+			color:#fff;
+		}
 		/*a tag*/
-		ul.navSecond{width:800px;margin:0 auto;background-color:pink;}
-		ul.navSecond:after{
-			content:"";display: block;clear: both;
+		ul.navSecond{
+			width:800px;
+			margin:0 auto;
+			background-color:pink;
 		}
-		ul.navSecond>li{float:left;width:133.33px;}
+		ul.navSecond:after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+		ul.navSecond>li{
+			float:left;
+			width:133.33px;
+		}
 		ul.navSecond>li>a{
-			display: block;text-align:center;
+			display: block;
+			text-align:center;
 			line-height:40px;
 		}
-		ul.navSecond>li>a:hover{background-color:red;color:white;}
+		ul.navSecond>li>a:hover{
+			background-color:red;
+			color:white;
+		}
 	</style>
 </head>
 <body>
