@@ -5,11 +5,21 @@
 	<meta charset="UTF-8">
 	<title>layout test</title>
 	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+  </script>
+
 	<style>
-		/*header area*/
-		#headerWrap {
-			background-color: gray;
+		img {
+			display: block;
+			width: 100%;
 		}
+		/*header area*/
+		/*#headerWrap {
+			background-color: black;
+		}*/
 		header#hdWrap {
 			width: 1200px;
 			height: 120px;
@@ -20,7 +30,7 @@
 		#hdWrap> h1 {
 			width: 150px;
 			height: 50px;
-			background-color: skyblue;
+			/*background-color: skyblue;*/
 			margin: 0 auto;
 			text-align: center;
 		}
@@ -45,8 +55,10 @@
 		}
 		/*visual area */
 		.visual {
-			height: 500px;
-			background-color: black;
+		/*	background-color: black;*/
+		/*	width: 1200px;
+			margin: 0 auto;*/
+
 		}
 		/*section area*/
 		#container {
@@ -62,7 +74,27 @@
 			width: 1200px;
 			margin: 0 auto; /*가운데 정렬 */
 		}
+
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    margin-bottom: 0;
+		}
+		.bx-wrapper .bx-pager, {
+		    bottom: 30px;
+		}
 	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true, 
+				controls:false });
+		});
+		// $(document).ready(); 준비 
+		// $(document).ready(function(){}); 이벤트 실행시 사용 
+	</script>
 </head>
 <body>
 	<div id="headerWrap">
@@ -80,7 +112,11 @@
 		</header>
 	</div>
 	<div class="visual">
-		
+		<div class="slider">
+			<div><img src="../images/pc01.jpg" alt=""></div>
+			<div><img src="../images/pc02.jpg" alt=""></div>
+			<div><img src="../images/pc03.jpg" alt=""></div>
+		</div>
 	</div>
 
 	<section id="container">
