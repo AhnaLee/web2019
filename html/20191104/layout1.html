@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout test</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/*header area*/
+		#headerWrap {
+			background-color: gray;
+		}
+		header#hdWrap {
+			width: 1200px;
+			height: 120px;
+			margin: 0 auto; /* 가운데 정렬 */
+			background-color: orange;
+			position: relative;
+		}
+		#hdWrap> h1 {
+			width: 150px;
+			height: 50px;
+			background-color: skyblue;
+			margin: 0 auto;
+			text-align: center;
+		}
+		nav.navWrap {
+			position: absolute;
+			bottom: 0;
+		}
+		nav.navWrap > ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		nav.navWrap > ul> li {
+			float: left;
+			width: 240px;
+		}
+		nav.navWrap > ul> li> a {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+			background-color: pink;
+		}
+		/*visual area */
+		.visual {
+			height: 500px;
+			background-color: black;
+		}
+		/*section area*/
+		#container {
+			height: 800px;
+			background-color: #ccc;
+			width: 1200px;
+			margin: 0 auto; /*가운데 정렬 */
+		}
+		/*footer area */
+		#footerWrap {
+			height: 130px;
+			background-color: #ddd;
+			width: 1200px;
+			margin: 0 auto; /*가운데 정렬 */
+		}
+	</style>
+</head>
+<body>
+	<div id="headerWrap">
+		<header id="hdWrap">
+			<h1>LOGO</h1>
+			<nav class="navWrap">
+				<ul>
+					<li><a href="#">MENU1</a></li>
+					<li><a href="#">MENU2</a></li>
+					<li><a href="#">MENU3</a></li>
+					<li><a href="#">MENU4</a></li>
+					<li><a href="#">MENU5</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="visual">
+		
+	</div>
+
+	<section id="container">
+		
+	</section>
+	<footer id="footerWrap">
+		
+	</footer>
+</body>
+</html>
