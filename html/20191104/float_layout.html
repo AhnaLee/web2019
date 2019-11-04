@@ -5,9 +5,17 @@
 	<meta charset="UTF-8">
 	<title>float layout</title>
 	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+  </script>
 	<style>
+		img {
+			display: block;
+		}
 		header#hdWrap {
-			width: 1000px;
+			width: 1200px;
 			height: 50px;
 			background-color: skyblue;
 			margin: 0 auto;
@@ -44,7 +52,33 @@
 		nav.navWrap ul> li> a:hover {
 			background-color: #ccc;
 		}
+		.visual {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		section#container {
+			width: 1200px;
+			margin: 0 auto;
+			height: 500px;
+			background-color: pink;
+		}
+		
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    margin-bottom: 0;
+		}
+		.bx-wrapper .bx-pager, {
+		    bottom: 30px;
+		}
 	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true, pager:false});
+		})
+	</script>
 </head>
 <body>
 	<header id="hdWrap">
@@ -59,5 +93,19 @@
 			</ul>
 		</nav>
 	</header>
+	<div class="visual">
+		<div class="slider">
+			<div><img src="../images/pc01.jpg" alt=""></div>
+			<div><img src="../images/pc02.jpg" alt=""></div>
+			<div><img src="../images/pc03.jpg" alt=""></div>
+		</div>
+	</div>
+
+	<section id="container">
+		
+	</section>
+	<footer id="footerWrap">
+		
+	</footer> 
 </body>
 </html>
