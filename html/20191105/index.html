@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Background</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body {
+			background-image: url(../images/pc01.jpg);
+			background-repeat: no-repeat; /*repeat-x | repeat-y*/
+			background-position: 10px 100px; /* right top /right bottom/ center */
+		}
+		.logo {
+			width: 120px;
+			height: 30px;
+		}
+		.logo >h1 {
+			height: 30px;
+			font-size: 1em;
+			background-image: url(../images/naver.png);
+			background-repeat: no-repeat;
+		}
+		.logo> h1> a {
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			text-indent: -9999px; /*글자 다른곳으로 보내버리기 */
+		}
+		.button {
+			width: 56px;
+			height: 20px;
+			background-image: url(../images/naver.png);
+			background-position: -124px 0px;
+			text-indent: -9999px;
+		}
+		.button:hover {
+			background-position: -124px -23px;
+		}
+		.buttonOne {
+			width: 42px;
+			height: 20px;
+			background-image: url(../images/naver.png);
+			background-position: -184px 0px;
+			text-indent: -9999px;
+		}
+		.buttonOne:hover {
+			background-position: -184px -46px;
+		}
+		.bgtest {
+			width: 200px; height: 200px;
+			/*background-image: url(../images/apple.png);
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-color: #ccc;
+			background-size: cover; */
+
+			background: #ccc url(../images/apple.png) no-repeat center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1><a href="#">NAVER</a></h1>
+		<!-- 이미지는 검색이 잘 되지않아 회사명으로 입력후 글자를 가림. -->
+	</div>
+	<div class="button">
+		
+		지식백과
+	</div>
+	<div class="buttonOne">
+		지식iN
+	</div>
+	<div class="bgtest">
+		
+	</div>
+</body>
+</html>
