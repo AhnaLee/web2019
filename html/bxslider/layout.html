@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		.slider img {
+			width: 100%;
+		}
+		header#hdWrap {
+			width: 1200px;
+			height: 50px;
+			margin: 0 auto;
+			background-color: red;
+			}
+		header#hdWrap:after {
+			content: "";
+			display: block;
+			clear: both;
+		}	
+		#hdWrap> h1 {
+			width: 100px;
+			float: left;
+			margin-left: 20px;
+		}
+		nav.navWrap {
+			width: 800px;
+			float: right;
+		}
+		nav.navWrap> ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		nav.navWrap> ul> li {
+			float: left;
+			width: 160px;
+		}
+		nav.navWrap> ul> li> a {
+			display: block;
+			text-align: center;
+			line-height: 50px;
+		}
+		nav.navWrap> ul> li> a:hover {
+			background-color: pink;
+			color: white;
+		}
+		.bx-wrapper .bx-pager {
+		    position: absolute;
+		    bottom: 30px;
+		    width: 100%;
+		}
+		.bx-wrapper {
+		    -moz-box-shadow:none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background: #fff;
+		    margin-top: 10px;
+		    margin-bottom: 0px;
+}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider({auto:true});
+		});
+	</script>
+</head>
+<body>
+	<header id="hdWrap">
+		<h1>LOGO</h1>
+			<nav class="navWrap">
+				<ul>
+					<li><a href="#">MENU1</a></li>
+					<li><a href="#">MENU2</a></li>
+					<li><a href="#">MENU3</a></li>
+					<li><a href="#">MENU4</a></li>
+					<li><a href="#">MENU5</a></li>
+				</ul>
+			</nav>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt=""></li>
+			<li><img src="images/pc02.jpg" alt=""></li>
+			<li><img src="images/pc03.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
