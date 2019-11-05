@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>menu images</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.nav {
+			width: 980px;
+			height: 50px;
+			margin: 0 auto;
+		}
+		.nav ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.nav ul li {
+			background-image: url(../images/sprites.png);
+			width: 140px;
+			height: 50px;
+			float: left;
+			margin: 0 auto;
+			transition: 0.3s;
+		}
+		.nav ul li:nth-child(1) {background-position: 0 0;}
+		.nav ul li:nth-child(1):hover {background-position: 0 -50px;}
+		.nav ul li:nth-child(2) {background-position: -140px 0;}
+		/*그림을 왼쪽으로 이동해서 사용하고싶으면 -값으로 잡아야함 */
+		.nav ul li:nth-child(2):hover {background-position: -140px -50px;}
+		.nav ul li:nth-child(3) {background-position: -280px 0;}
+		.nav ul li:nth-child(3):hover {background-position: -280px -50px;}
+		.nav ul li:nth-child(4) {background-position: -420px 0;}
+		.nav ul li:nth-child(4):hover {background-position: -420px -50px;}
+		.nav ul li:nth-child(5) {background-position: -560px 0;}
+		.nav ul li:nth-child(5):hover {background-position: -560px -50px;}
+		.nav ul li:nth-child(6) {background-position: -700px 0;}
+		.nav ul li:nth-child(6):hover {background-position: -700px -50px;}
+		.nav ul li:nth-child(7) {background-position: -840px 0;}
+		.nav ul li:nth-child(7):hover {background-position: -840px -50px;}
+
+		.nav ul li a {
+			display: block;
+			line-height: 50px;
+			text-indent: -9999px;
+		}
+		.nav ul li:nth-child(1).active {background-position: 0 -50px;}
+		.nav ul li:nth-child(2).active {background-position: -140px -50px;}
+		.nav ul li:nth-child(3).active {background-position: -280px -50px;}
+		.nav ul li:nth-child(4).active {background-position: -420px -50px;}
+		.nav ul li:nth-child(5).active {background-position: -560px -50px;}
+		.nav ul li:nth-child(6).active {background-position: -700px -50px;}
+		.nav ul li:nth-child(7).active {background-position: -840px -50px;}
+	</style>
+</head>
+<body>
+	
+	<div class="nav">
+		<ul>
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li class="active"><a href="#">MENU6</a></li>
+			<li><a href="#">MENU7</a></li>
+		</ul>
+	</div>
+</body>
+</html>
