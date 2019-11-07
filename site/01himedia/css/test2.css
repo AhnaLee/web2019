@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*header*/
+header#main_header{}
+div.main_util {
+	border-bottom: 1px solid #ddd
+}
+nav.util_menu {
+	width: 980px;
+	margin: 0 auto;
+	background-color: skyblue;
+}
+.util_menu ul.util_wrap {
+	float: right;
+}
+.util_menu ul.util_wrap> li {
+	float: left; 
+}
+.util_menu ul.util_wrap> li:after {}

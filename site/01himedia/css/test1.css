@@ -8,11 +8,9 @@ header#main_header {}
 #util_menu{
 	width:980px;
 	margin:0 auto;
-	background-color: pink;
 }
 #util_menu ul.util_wrap {
 	float: right;
-	background-color: green;
 }
 #util_menu ul.util_wrap li {
 	float: left;
@@ -39,4 +37,25 @@ header#main_header>h1{
 	width: 200px;
 	margin:15px auto;
 	text-align:center;
+}
+#main_menu{background-color: #1d5da4;height: 45px;}
+#main_menu ul.menu_wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+#main_menu ul.menu_wrap> li {
+	float: left;
+	width: 163.33px;
+	border-right:1px solid #2867ad;
+}
+#main_menu ul.menu_wrap> li> a {
+	display: block;
+	text-align: center;
+	line-height: 45px;
+	color:#fff;
+	font-weight:bold;
+}
+#main_menu ul.menu_wrap li a:hover{
+	background-color:skyblue;
+	color:#1d5da4;
 }
