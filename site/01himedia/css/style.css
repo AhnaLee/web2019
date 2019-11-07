@@ -75,3 +75,48 @@ div#visual_wrap {
 	left: 0;
 	top: 80px;
 }
+/*visual icon*/
+#visual_icon {
+	background-color: #eee;
+}
+#visual_icon .icon_wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+#visual_icon .icon_wrap li {
+	float: left;
+	width: 196px;
+	height: 196px;
+}
+#visual_icon .icon_wrap li:nth-child(1) {
+	background-color: #7c99b9;
+}
+#visual_icon .icon_wrap li:nth-child(2) {
+	background-color: #4F74A1;
+}
+#visual_icon .icon_wrap li:nth-child(3) {
+	background-color: #4B8CE0;
+}
+#visual_icon .icon_wrap li:nth-child(4) {
+	background-color: #3DB5F2;
+}
+#visual_icon .icon_wrap li:nth-child(5) {
+	background-color: #95C8FF;
+}
+#visual_icon .card {
+	padding: 15px;
+	_background-color: pink;
+}
+#visual_icon .card img{
+	display: block;
+	margin: 0 auto;
+}
+#visual_icon .card .card_body {
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+#visual_icon .card .card_body .card_text {
+	font-size: 12.5px;
+	padding-top: 5px;
+}
