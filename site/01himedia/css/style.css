@@ -11,7 +11,7 @@ header#main_header{}
 }
 #util_menu ul.util_wrap{
 	float: right;
-	/*width: 236px;margin-left:auto;*/
+	/*width: 236px;margin-left:auto; margin 값 사용하면 위드스 값도 잡아줘야함*/
 }
 #util_menu ul.util_wrap li{
 	float: left;
@@ -53,4 +53,25 @@ header#main_header>h1{
 #main_menu ul.menu_wrap li a:hover{
 	background-color:skyblue;
 	color:#1d5da4;
+}
+/*visual*/
+div#visual_wrap {
+	height: 400px;
+	background: #203969 url(../images/visual_bg.jpg) no-repeat center;
+}
+#visual_wrap .visual {
+	width: 980px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+#visual_wrap .visual img {
+	position: absolute;
+}
+#visual_wrap .visual img.img01 {
+	right:0;
+}
+#visual_wrap .visual img.img02 {
+	left: 0;
+	top: 80px;
 }
