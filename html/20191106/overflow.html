@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>overflow</title>
+	<style>
+		.box1{
+			width: 200px;height: 300px;
+			background-color: #ff0;
+			/*overflow-y: scroll*/
+			overflow:hidden; /*hidden | auto | scroll |visible*/
+		}
+		.box2{
+			width: 500px;height: 500px;
+			background-color: #00f;
+			position: relative;
+			overflow:hidden;
+		}
+		.box3{
+			width: 300px;height: 300px;
+			position: absolute;
+			right:-50px;
+		}
+		.box2:hover .box3{/*right:30px;top:30px;*/display:none;}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nam itaque sunt ullam minus sit suscipit! Ipsa magni atque unde molestiae voluptate quam distinctio inventore aspernatur repudiandae veniam fugit, dolore, velit debitis. Dolorem accusantium quasi maxime, laudantium facilis, libero rem ipsa ex labore vel reprehenderit? Expedita quos earum maiores, sit tempora, illum cupiditate. Corporis ullam, vitae ut mollitia quaerat harum odit architecto quo culpa accusantium quam, dolorem officiis error ducimus impedit reprehenderit, sunt asperiores itaque necessitatibus provident neque numquam nobis sapiente amet? Quisquam tenetur blanditiis alias eius! Pariatur accusamus velit quae nostrum, nam rem id quis minus quibusdam ut earum.
+	</div>
+	
+	<div class="box2">
+		<div class="box3"><img src="../images/testimg.jpg" alt=""></div>
+	</div>
+</body>
+</html>
