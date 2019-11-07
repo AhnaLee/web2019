@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>after</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box1 {
+			width: 300px;
+			height: 200px;
+			background-color: pink;
+			margin: 0 auto;
+		}
+		/*.box1:before {
+			content: "hello(before)";
+		}
+		.box1:after {
+			content: "Hello(after)";
+		}*/
+		.box1:after {
+			content: "";
+			display: block;
+			width: 80px;
+			height: 3px;
+			background-color: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;s
+		}
+		.box1 p {
+			width: 160px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		div.nav {
+			width: 1000px;
+			margin: 0 auto;
+		/*	background-color: #ccc;*/
+		}
+		.nav>ul:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.nav>ul {
+			overflow: hidden; /* 오버플로우는 넘쳐나는것을 감쳐줌 */
+		}
+		.nav>ul> li {
+			float: left;
+			width: 166.67px;
+			position: relative;
+		}
+		.nav>ul> li:after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 10px;
+			background-color: black;
+			position: absolute;
+			top: 15px;
+			margin-left: -1px;
+		}
+		.nav>ul> li> a {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+		}
+		/*.nav>ul> li> a:after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 10px;
+			background-color: black;
+			position: absolute;
+			top: 15px;
+		}*/
+		.box2 {
+			width: 200px;
+			height: 30px;
+			margin: 0 auto;
+			background-color: yellow;
+			border: 1px solid #000;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding top: 3px;
+			box-sizing: border-box;
+		}
+		.box3 {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			border: 5px solid #000;
+			border-radius: 100px;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		.box3 img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p>Lorem ipsum dolor.</p>
+	</div>
+
+	<div class="nav">
+		<ul>
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+		</ul>
+	</div>
+
+	<div class="box2">Lorem</div>
+	<div class="box3"><img src="../images/testimg.jpg" alt=""></div>
+</body>
+</html>
