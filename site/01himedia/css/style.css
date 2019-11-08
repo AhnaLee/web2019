@@ -78,6 +78,7 @@ div#visual_wrap {
 /*visual icon*/
 #visual_icon {
 	background-color: #eee;
+	margin-bottom: 30px;
 }
 #visual_icon .icon_wrap {
 	width: 980px;
@@ -119,4 +120,127 @@ div#visual_wrap {
 #visual_icon .card .card_body .card_text {
 	font-size: 12.5px;
 	padding-top: 5px;
+}
+/*section_first wrap*/
+div#section_wrap1 {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#section_wrap1 li {
+	float: left;
+	width: 310px;
+	margin-right: 25px;
+	/*980-310-*3= 50px/ 2= 25px*/
+}
+#section_wrap1 li:last-child {
+	margin-right: 0;
+}
+#section_wrap1 li .card_body {
+	padding:10px 15px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+#section_wrap1 li img {
+	display: block;
+}
+#section_wrap1 li .card_text {}
+
+div#section_wrap2 {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+#section_wrap2 li  {
+	float: left;
+	width: 310px;
+	height: 150px;
+	margin-right: 25px;
+	border: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+}
+#section_wrap2 li:last-child {
+	margin-right: 0;
+}
+#section_wrap2 li img {
+	padding-top: 10px;
+	display: block;
+	position: absolute;
+	right: -20px;
+}
+#section_wrap2 li .card .card_body {
+	padding: 10px;
+	width: 170px;
+	display: block;
+	position: absolute;
+}
+#section_wrap2 li .card_title {
+	padding-bottom: 10px;
+}
+#section_wrap2 li .card_text {
+	padding-bottom: 20px;
+}
+#section_wrap2 li .card .card_body a{
+	color: #4b8ce0;
+}
+/*footer*/
+footer#footer { width: 100%;
+}
+#ft_wrap {
+	background-color: #4d4d4d
+}
+#ft_wrap #ft_util {
+	width: 980px;
+	margin: 0 auto;
+}
+#ft_util ul.util_wrap_ft li {
+	float: left;
+	position: relative;
+}
+#ft_util ul.util_wrap_ft li:after{
+	content:"";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	position: absolute;
+	top:10px;
+}
+#ft_util ul.util_wrap_ft li:first-child:after{
+	content:"";
+	display:none;
+}
+#ft_util ul.util_wrap_ft li a{
+	display: block;
+	line-height:30px;
+	text-align:center;
+	color: #ccc;
+	padding:0 20px;
+}
+div#ft {
+	width: 100%;
+	height: 150px;
+	background-color: #5e5e5e;
+}
+#ft_wrap2 {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#ft_wrap2 h3 {
+	width:200px;
+	height: 150px;
+	text-align:center;
+	float: left;
+	line-height: 150px;
+	color: white;
+}
+.ft_intro {
+	float: left;
+	padding-top: 20px;
+}
+.ft_intro p {
+	margin-bottom: 10px;
+	color:#ccc;
 }
