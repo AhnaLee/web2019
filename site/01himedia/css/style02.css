@@ -1,0 +1,240 @@
+@charset "utf-8";
+header#main_haeder{}
+#main_header .main_util {
+	border: 1px solid #ccc;
+}
+.main_util .util_menu {
+	width: 980px;
+	margin: 0 auto;
+}
+.main_util ul.util_wrap {
+	float: right;
+	position: relative;
+}
+.main_util ul.util_wrap>li  {
+	float: left;
+	position: relative;
+}
+.main_util ul.util_wrap>li:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	position: absolute;
+	top: 10px;
+}
+.main_util ul.util_wrap>li:first-child:after {
+	content: "";
+	display: none;
+}
+.main_util ul.util_wrap>li a {
+	display: block;
+	padding: 0 15px;
+	line-height: 35px;
+}
+#main_header h1 {
+	width: 200px;
+	margin: 15px auto;
+}
+div.main_wrap{background-color:#1d5da4;height: 45px;}
+.main_wrap .main_menu {
+	width: 980px;
+	margin: 0 auto;
+}
+.main_menu li {
+	float: left;
+	width: 163.33px;
+	border-right:1px solid #2867ad;
+}
+.main_menu li:first-child:after {
+	border-left: 1px solid #2867ad;
+}
+.main_menu li a {
+	display: block;
+	text-align: center;
+	line-height: 45px;
+	color: white;
+}
+.main_menu li a:hover {
+	background-color: skyblue;
+	color: #1d5da4;
+}
+/*visual area */
+div#visual_wrap {
+	height: 400px;
+	background: #203969 url(../images/visual_bg.jpg) no-repeat center;
+}
+#visual_wrap .visual {
+	width: 980px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+.visual img {
+	position: absolute;
+}
+.visual img.img01 {
+	right: 0;
+}
+.visual img.img02 {
+	left: 0;
+	top: 80px;
+}
+
+/*icon area */
+div.icon_wrap {background-color: #ccc;}
+.icon_wrap .icon_box {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.icon_box ul li {
+	float: left;
+	width: 196px;
+	height: 196px;
+}
+.icon_box ul li:nth-child(1){background-color: #7c99b9;}
+.icon_box ul li:nth-child(2){background-color: #4F74A1;}
+.icon_box ul li:nth-child(3){background-color: #4B8CE0;}
+.icon_box ul li:nth-child(4){background-color: #3DB5F2;}
+.icon_box ul li:nth-child(5){background-color: #95C8FF;}
+
+.icon_box .card {
+	padding:15px;
+}
+.icon_box .card img {
+	display: block;
+	margin: 0 auto;
+}
+.icon_box .card .card_body {
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+.card .card_body .card_text {
+	font-size: 12.5px;
+	padding-top: 5px;
+}
+/*box section*/
+
+section#section_wrap {}
+#section_wrap ul {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#section_wrap ul li {
+	float: left;
+	width: 310px;
+	margin-right: 25px;
+}
+#section_wrap ul li:last-child {
+	margin-right: 0;
+}
+#section_wrap div.card .card_body {
+	padding:10px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+div#section_wrap02 {}
+#section_wrap02 ul {
+	width: 980px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#section_wrap02 ul li {
+	float: left;
+	width: 310px;
+	height: 165px;
+	margin-right: 25px;
+	border: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+}
+#section_wrap02 ul li:last-child {
+	margin-right: 0;
+}
+#section_wrap02 .card img {
+	padding-top: 10px;
+	display: block;
+	position: absolute;
+	right: -20px;
+}
+#section_wrap02 .card .card_body  {
+	padding:10px;
+	width: 170px;
+	direction: block;
+	position: absolute;
+}
+#section_wrap02 .card .card_body h3 {
+	padding-bottom: 10px;
+	color: #333333;
+}
+#section_wrap02 .card .card_body  p {
+	padding-bottom: 20px;
+	color: #888888;
+}
+#section_wrap02 .card .card_body a {
+	color: #4b8ce0;
+}
+/*footer area*/
+footer#footer {height: 174px; background-color: #5e5e5e; width: 100%;}
+#footer div.ft_wrap {
+	height: 43px;
+	background-color: #4d4d4d;
+}
+#footer div .ft_util {
+	width: 980px;
+	margin: 0 auto;
+}
+.ft_util ul li {
+	float: left;
+	position: relative;
+}
+.ft_util ul li:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	background-color: #717171;
+	position: absolute;
+	top: 15px;
+}
+.ft_util ul li:first-child:after {
+	content: "";
+	display: none;
+}
+.ft_util ul li:first-child >a {
+	padding: 0;
+}
+.ft_util ul li a {
+	padding: 0 30px;
+	display: block;
+	font-size: 0.8em;
+	color: #cdcdcd;
+	line-height: 43px;
+	font-weight: bold;
+}
+div#ft_wrap2 {
+	width: 980px;
+	height: 105px;
+	margin: 0 auto; 
+}
+#ft_wrap2 h3.footer_logo { 
+	width: 200px;
+	height: 131px;
+	float: left;
+	text-align: center;
+	line-height: 131px;
+	padding-left: -30px;
+	color: white;
+}
+#ft_wrap2 div.company { 
+	float: left;
+	color: #cdcdcd;
+	padding:15px;
+}
+#ft_wrap2 div.company p {
+	padding-bottom: 10px;
+}
