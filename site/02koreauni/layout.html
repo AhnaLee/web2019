@@ -6,102 +6,10 @@
 	<title>layout</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
-	<style>
-		#sec_wrap {
-			background:#558fce url(images/mainbg01.jpg) no-repeat center;
-		}
-		#sec_wrap .con_wrap {
-			width: 1200px;
-			height: 260px;
-			margin: 0 auto;
-			background-color: #ccc;
-			padding-top: 75px;
-		}
-		#sec_wrap .con_wrap>div.title{
-			float: left;
-		}
-		#sec_wrap .con_wrap>div.con_icon {
-			float: right;
-		}
-		/* container_wrap */
-		#sec_wrap .container_wrap {
-			width: 1200px;
-			margin: 0 auto;
-		}
-		#sec_wrap .container_wrap li {
-			float: left;
-			height: 225px;
-			width: 25%;
-		}
-		#sec_wrap .container_wrap li .banner01 {
-			padding-top: 80px;
-			padding-left: 40px;
-			color: white;
-		}
-		#sec_wrap .container_wrap li .banner01 .banner_txt {
-			font-size: 2em;
-			margin-bottom: 20px;
-		}
 
-		#sec_wrap .container_wrap li:nth-child(1){width:75%;height: 450px;}
-		#sec_wrap .container_wrap li:nth-child(2){width:25%;height: 450px; background-image: url(images/banner01.jpg);}
-		#sec_wrap .container_wrap li:nth-child(3){background-color: #00f;}
-		#sec_wrap .container_wrap li:nth-child(4){background-color: #0ff;}
-		#sec_wrap .container_wrap li:nth-child(5){background-color: #ff0;}
-		#sec_wrap .container_wrap li:nth-child(6){background-color: #f0f;}
-		#sec_wrap .container_wrap li:nth-child(7){width:25%;background-color: pink;}
-		#sec_wrap .container_wrap li:nth-child(8){width:75%;background-color: gray;}
-
-		#sec_wrap .container_wrap div.slider01 {
-		}
-		#sec_wrap .container_wrap div.slider01.slide01 {}
-		#sec_wrap .container_wrap div.slider01 .slide01_txt {
-			position: absolute;
-			top: 70px;
-			left: 90px;
-			color: #1651b9;
-			font-size: 4em;
-		}
-
-		/*슬라이더 수정 */
-
-		.bx-wrapper {
-	    -moz-box-shadow: none;
-	    -webkit-box-shadow: none;
-	    box-shadow: none;
-	    border: none;
-		}
-		.bx-wrapper .bx-pager {
-		bottom: 30px;
-		}
-		/* common */
-		a.btn {
-			width: 170px;
-			display: block;
-			line-height: 40px;
-			text-align: center;
-			border: 1px solid white;
-			font-weight: bold;
-			color: white;
-			background-color: rgba(0,0,0,0.5);
-			border-radius: 20px;
-			transition: 0.3s;
-		}
-		a.btn:hover {
-			background-color: rgba(0,0,0,1);
-		}
-		.mb10 {
-			margin-bottom: 10px !important;
-		}
-		.mb20 {
-			margin-bottom: 20px !important;
-		}
-		.mb30 {
-			margin-bottom: 30px !important;
-		}
-	</style>
 	<script>
 		$(document).ready(function(){
 			$(".slider01").bxSlider({auto:true});
@@ -110,14 +18,52 @@
 	</script>
 </head>
 <body>
+	<header id="main_header">  <!-- w100% -->
+		<div class="main_util"> 
+			<nav class="util_menu1 clearfix"> <!-- w1200 h40 -->
+				<ul class="util_wrap1 clearfix">
+					<li><a href="#">대학교</a></li>
+					<li><a href="#">입학안내</a></li>
+					<li><a href="#">대학원</a></li>
+				</ul>
+			<div class="util_menu2 clearfix">	
+				<ul class="util_wrap2 clearfix">
+					<li><a href="#">글자크기</a></li>
+					<li>
+						<div class="clearfix">
+							<a href="#">+</a>
+							<a href="#">-</a>
+						</div>
+					</li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+	</header>
 	<section id="sec_wrap"> <!-- 바깥쪽/ 배경이미지 삽입 영역  -->
 		<div class="con_wrap" class="clearfix"> <!-- 1200px영역 -->
-			<div class="title">
-				<span> 함께 나누며 세상을 이끌어 </span>
-				<h3>세계로 향하는 한국대학교 </h3>
+			<div class="title">  <!--w680 h140 -->
+				<span class="title_txt"> 함께 나누며 세상을 이끌어 </span>
+				<h3>세계로향하는 한국대학교 </h3>
 			</div>
-			<div class="con_icon">
-			<!-- ul>li*4 -->
+			<div class="con_icon"> <!-- w440 h140 --> 
+				<ul class="main_icon clearfix"> 
+					<li><img src="images/main_icon01.png" alt="입학절차안내">
+						<p>입학절차안내</p>
+					</li>
+					<li><img src="images/main_icon02.png" alt="입학설명회">
+						<p>입학설명회</p>
+					</li>
+					<li><img src="images/main_icon03.png" alt="장학제도">
+						<p>장학제도</p>
+					</li>
+					<li><img src="images/main_icon04.png" alt="증명서발급">
+						<p>증명서발급</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="container_wrap">
@@ -147,10 +93,35 @@
 							<a href="#" class="btn">자세히보기 ▶</a>
 						</div>
 				</li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li class="icon_box">
+					<h2>HOT LINK</h2>
+					<ul class="icon_wrap clearfix">
+						<li><img src="images/icon01.png" alt="icon01">
+							<p> 국제교류<br>센터
+						</li>
+						<li><img src="images/icon02.png" alt="icon02">
+							<p> 원격지원<br>시스템
+						</li>
+						<li><img src="images/icon03.png" alt="icon03">
+							<p> 예산/결산<br>공고
+						</li>
+					</ul>
+				</li>
+				<li class="notice_wrap">
+					<h2>공지사항</h2>
+					<div class="notice_box">
+					 	
+					</div>
+				</li>
+				<li class="news_wrap">
+					<h2>SNS NEWS</h2>
+					<div class="news_box">
+						
+					</div>
+				</li>
+				<li class="campus">
+					<p>캠퍼스 투어</p>
+				</li>
 				<li></li>
 				<li>
 					<div class="slider02 pager_fix">
@@ -160,7 +131,7 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+		</div>	
 	</section>
 </body>
 </html>
