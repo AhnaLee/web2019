@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	<form action="welcome.php" method="get">
+		<fieldset>
+			<legend>기본정보</legend>
+			<label for="myname">이름</label>
+			<input type="text" name="myname" id="myname"><br>
+
+			<!-- welcome.php?myname=이아나&email=ahnalee87@gmail.com -->
+
+			<label for="email">이메일</label>
+			<input type="text" name="email" id="email">
+
+		</fieldset>
+		<input type="submit" value="보내기">
+	</form>
+	
+</body>
+</html>
