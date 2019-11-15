@@ -26,26 +26,71 @@
 			color: white;
 			position: relative;
 		}
-		header#main_header div.util_menu2 ul.util_wrap2 {
+		header#main_header  ul.util_wrap2 {
 			float: right;
 		}
-		header#main_header div.util_menu2 ul.util_wrap2 li {
+		header#main_header  ul.util_wrap2>li {
 			float: left;
 		}
-		header#main_header div.util_menu2 ul.util_wrap2 li a {
+		header#main_header ul.util_wrap2>li>a {
 			display: block;
 			text-align: center;
 			line-height: 50px;
 			color: white;
 			font-size: 0.8em;
 			float: left;
-
+			margin-right: 10px;
+			color: #c0c2ce;
+		}
+		#main_header  li.util_btn{width:40px;padding-top:18px;}
+		#main_header  li.util_btn a {
+			display: block;
+			float: left;
+			text-align: center;
+			line-height: 10px;
+			width: 15px;
+			height: 15px;
+			background-color: #fff;
+			margin-right: 2px;
+			color: #c0c2ce;
+		}
+		div#main_wrapper{
+			background-color: #fff;
+		}
+		div#main_wrapper .main_wrap {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#main_wrapper .main_wrap div.logo {
+			width:220px;
+			height: 120px;
+			padding-top: 30px;
+			float: left;
+		}
+		div#main_wrapper .main_wrap div.main_menu {
+			width: 750px;
+			float: right;
+		}
+		div#main_wrapper .main_wrap div.main_menu li{
+			float: left;
+			width: 130px;
+			margin-top: 40px;
+		}
+		div#main_wrapper .main_wrap div.main_menu li>a{
+			display: block;
+			text-align: center;
+			color: #595959;
+			line-height: 40px;
+		}
+		div#main_wrapper div.main_btn {
+			float: right;
+		}
+		div#main_wrapper div.main_btn a {
+			display: block;
+			margin-top: 40px;
 		}
 
-
-
-
-
+	
 		#sec_wrap {
 			background:#558fce url(../images/mainbg01.jpg) no-repeat center;
 		}
@@ -102,6 +147,7 @@
 			float: left;
 			height: 225px;
 			width: 25%;
+			position: relative;
 		}
 		#sec_wrap .container_wrap >ul>li .banner01 {
 			padding-top: 80px;
@@ -119,7 +165,7 @@
 		#sec_wrap .container_wrap>ul> li:nth-child(4){background-color: #1651b7;}
 		#sec_wrap .container_wrap>ul> li:nth-child(5){background-color: #ffffff;}
 		#sec_wrap .container_wrap>ul> li:nth-child(6){background-image: url(../images/school01.jpg);}
-		#sec_wrap .container_wrap>ul> li:nth-child(7){width:25%;background-color: pink;}
+		#sec_wrap .container_wrap>ul> li:nth-child(7){width:25%;background-image: url(../images/school02.jpg);}
 		#sec_wrap .container_wrap>ul> li:nth-child(8){width:75%;background-color: gray;}
 
 		#sec_wrap .container_wrap div.slider01 {
@@ -178,9 +224,18 @@
 			height: 50px;
 			margin: 20px 0 10px 25px;
 			font-size: 1.3em;
+			color: #00173d;
 		}
-		#sec_wrap .container_wrap div.news_box {}
-		#sec_wrap .container_wrap div.news_box {}
+		#sec_wrap .container_wrap div.news_box {
+			width: 200px;
+			height: 150px;
+		}
+		#sec_wrap .container_wrap div.news_box img {
+			margin-left: 25px;
+		}
+		#sec_wrap .container_wrap div.news_box p {
+			
+		}
 
 		#sec_wrap .container_wrap li.campus{position: relative;}
 		#sec_wrap .container_wrap li.campus p{
@@ -194,8 +249,46 @@
 			background-color: rgba(0,0,0,0.5);
 			position: absolute;
 			bottom: 0;}
+ 
+		#sec_wrap .container_wrap div.box_07 {
+			position: absolute;
+			width: 65px;
+			height: 65px;
+			top:50%;left:50%;
+			margin-top:-32px;
+			margin-left:-32px;
+		}
+		#sec_wrap .container_wrap div.txt_wrap {
 
-	
+		}
+		#sec_wrap .container_wrap div.txt_wrap .slide02_txt {
+			width: 400px;
+			height: 200px;
+			position: absolute;
+			top: 30px;
+			left: 30px;
+		}
+		#sec_wrap .container_wrap .txt_wrap h2 {
+			color: #ff503d;
+			font-size: 1.8em;
+		}
+		#sec_wrap .container_wrap .txt_wrap p {
+			font-size: 3.3em;
+			color: #ff503d;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		#sec_wrap .container_wrap .txt_wrap .btn {
+			width: 150px;
+			height: 40px;
+			background-color: #ff503d;
+			text-align: center;
+			line-height: 40px;
+			font-size: 13px;
+			color: #fff
+		}
+
+
 		/*슬라이더 수정 */
 
 		.bx-wrapper {
@@ -232,4 +325,3 @@
 		.mb30 {
 			margin-bottom: 30px !important;
 		}
-	

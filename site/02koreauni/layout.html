@@ -13,7 +13,7 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider01").bxSlider({auto:true});
-			$(".slider02").bxSlider({auto:true});
+			$(".slider02").bxSlider({auto:true , controls:false});
 		});
 	</script>
 </head>
@@ -29,7 +29,7 @@
 			<div class="util_menu2 clearfix">	
 				<ul class="util_wrap2 clearfix">
 					<li><a href="#">글자크기</a></li>
-					<li>
+					<li class="util_btn">
 						<div class="clearfix">
 							<a href="#">+</a>
 							<a href="#">-</a>
@@ -40,8 +40,24 @@
 					<li><a href="#">사이트맵</a></li>
 				</ul>
 			</div>
-		</nav>
+			</nav>
 		</div>
+		<div id="main_wrapper">
+			<div class="main_wrap clearfix">
+				<div class="logo"><a href="#"><img src="images/logo01.png" alt=""></a></div>
+				<div class="main_menu">
+					<ul class="clearfix">
+						<li><a href="">대학소개</a></li>
+						<li><a href="">학과소개</a></li>
+						<li><a href="">학사안내</a></li>
+						<li><a href="">대학생활</a></li>
+						<li><a href="">학생지원센터</a></li>
+						<div class="main_btn"><a href="#"><img src="images/menu_icon01.jpg" alt=""></a></div>
+					</ul>
+				</div>	
+			</div>
+		</div>
+
 	</header>
 	<section id="sec_wrap"> <!-- 바깥쪽/ 배경이미지 삽입 영역  -->
 		<div class="con_wrap" class="clearfix"> <!-- 1200px영역 -->
@@ -116,16 +132,38 @@
 				<li class="news_wrap">
 					<h2>SNS NEWS</h2>
 					<div class="news_box">
-						
+						<img src="images/school03.jpg" alt="">
+						<p> 한국 대학교는<br>
+							2017학년도 신입생<br>
+							입학식을 3월 2일(목)<br>
+							본교 종합체육관 ...
+						</p>
 					</div>
 				</li>
 				<li class="campus">
 					<p>캠퍼스 투어</p>
 				</li>
-				<li></li>
+				<li>
+						<div class="box_07">
+							<a href="#"><img src="images/btn01.png" alt=""></a>
+						</div>
+				</li>
 				<li>
 					<div class="slider02 pager_fix">
-						<div><img src="images/ban_slide01.jpg" alt=""></div>
+						<div class="txt_wrap">
+							<img src="images/ban_slide01.jpg" alt="">
+							<div class="slide02_txt">
+								<h2>
+									2017년 신·편입생2차모집
+								</h2>
+								<p>
+									2017.7.1 ~ 7.10
+								</p>
+								<div class="btn">
+									입학사전예약 ▶
+								</div>
+							</div>
+						</div>
 						<div><img src="images/ban_slide02.jpg" alt=""></div>
 						<div><img src="images/ban_slide03.jpg" alt=""></div>
 					</div>
