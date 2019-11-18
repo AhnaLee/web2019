@@ -213,7 +213,7 @@
 			width: 150px;
 			height: 40px;
 			color: #fff;
-			margin: 20px 0 10px 25px;
+			margin: 20px 0 0 25px;
 			font-size: 1.3em;
 		}
 		#sec_wrap .container_wrap li.notice_wrap{}
@@ -222,8 +222,21 @@
 			height: 2px;
 			background-color: #fff;
 			margin: 0 auto;
+			margin-bottom: 25px;
 		}
 		#sec_wrap .container_wrap div.notice_box {}
+		#sec_wrap .container_wrap div.notice_box ul{}
+		#sec_wrap .container_wrap div.notice_box ul li{
+			color: #fff;
+			font-size: 12px;
+			margin-bottom: 15px;
+			margin-left: 20px;
+			position: relative;
+		}
+		#sec_wrap .container_wrap div.notice_box span{
+			position: absolute;
+			right: 20px;
+		}
 
 		
 		#sec_wrap .container_wrap li.news_wrap h2 {
