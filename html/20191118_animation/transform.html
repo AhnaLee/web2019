@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body {
+			background-image: url(../images/bg_grid.gif);
+		}
+		div {
+			width: 200px;
+			height: 100px;
+			background-color: orange;
+		}
+		/* div.box2 {
+			transform:translate(100px,50px) scale(1,1) rotate(0);
+			transition: 0.3s;
+		}
+		div.box2:hover {
+			transform:translate(150px,100px) scale(1.2,1.2) rotate(30deg);
+			
+		}*/
+
+		div.boxWrap {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			position: relative;
+			left: 200px;
+			top: 100px;
+		}
+		.boxWrap .box {
+			width: 200px;
+			height: 200px;
+			transition: 0.3s;
+		}
+		.boxWrap .box1 {
+			width: 200px;
+			height: 200px;
+			transition: 0.2s;
+			background-color: yellow;
+			position: absolute;
+			top: 0;
+		}
+		.boxWrap .box2 {
+			width: 200px;
+			height: 200px;
+			transition: 0.1s;
+			background-color: pink;
+			position: absolute;
+			top: 0;
+		}
+		.boxWrap:hover .box {
+	
+			transform:translate(0,0) rotate(-30deg) 
+		}
+		.boxWrap:hover .box1 {
+	
+			transform:translate(0,0) rotate(-20deg) 
+		}
+		.boxWrap:hover .box2 {
+	
+			transform:translate(0,0) rotate(-10deg) 
+		}
+		div.box_wrap {
+			width: 300px;
+			height: 300px;
+			background-color: gray;
+			position: relative;
+			left: 400px;
+			top: 100px;
+		}
+		div.box_wrap .box01 {
+			width: 300px;
+			height: 300px;
+			background-color: black;
+			position: absolute;
+			top: 0;
+			transition: 0.2s;
+		}
+		div.box_wrap .box02 {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			background-color: blue;
+			transition: 0.3s;
+			top: 0;
+		}
+		.box_wrap:hover .box01 {
+			transform: rotate(30deg);
+		}
+		.box_wrap:hover .box02 {
+			transform: rotate(60deg)scale(0.9,0.9);
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">박스1</div>
+	<div class="box2">박스2</div>
+
+	<div class="boxWrap">
+		<div class="box">테스트</div>
+		<div class="box1">테스트</div>
+		<div class="box2">테스트</div>
+	</div>
+
+	<div class="box_wrap">
+		<div class="box01">박스01</div>
+		<div class="box02">박스02</div>
+	</div>
+</body>
+</html>
