@@ -6,22 +6,75 @@
 	<title>베스킨라빈스</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	
+	<style>
+		/* slider area */
+		 .bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: none;
+		    background-color: none;
+		}
+		.bx-wrapper .bx-pager {
+		    position: absolute;
+		    bottom: 340px;
+		    width: 100%;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.slider_01').bxSlider ();
+			$('.slider_02').bxSlider ();
+		})
+	</script>
 </head>
 <body>
 	<header id="header">
-	 	<nav class="nav_wrap">
+		<div class="visual">
+			<ul class="slider_01">
+				<li><img src="images/slider01.png" alt="이미지1"></li>
+				<li><img src="images/slider02.png" alt="이미지2"></li>
+				<li><img src="images/slider03.png" alt="이미지3"></li>
+			</ul>
+		</div>
+		<nav class="nav_wrap">
 			<div class="main_wrap">
-				<h3>logo</h3>
+				<h3><img src="images/logo.png" alt=""></h3>
 				<div class="menu_wrap clearfix">
 					<ul class="clearfix">
-						<li>MENU</li>
-						<li>EVENT</li>
-						<li>STORE</li>
-						<li>ABOUT</li>
+						<li><a href="#">MENU</a></li>
+						<li><a href="#">EVENT</a></li>
+						<li><a href="#">STORE</a></li>
+						<li><a href="#">ABOUT</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<section id="sec_wrap">
+			<div class="con_wrap">
+				<ul class="clearfix">
+					<li><a href="#">해피</a></li>
+					<li><a href="#">배민</a></li>
+					<li><a href="#">요기요</a></li>
+					<li><a href="#">카카오</a></li>
+					<li><a href="#">이벤트1</a></li>
+					<li><a href="#">이벤트2</a></li>
+					<li><a href="#">매장찾기</a></li>
+				</ul>
+			</div>
+			<div class="visual_02">
+				<div class="slider_02">
+					<li><img src="images/slide2_01.png" alt=""></li>
+					<li><img src="images/slide2_02.png" alt=""></li>
+					<li><img src="images/slide2_03.png" alt=""></li>
+				</div>
+			</div>
+		</section>
 	</header>
 </body>
 </html>
