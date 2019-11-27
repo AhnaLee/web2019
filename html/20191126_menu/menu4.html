@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>menu test2</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		nav.menu ul.sub {display: none;}
+
+		nav.menu {
+			width: 1000px;
+			height: 40px;
+			margin: 0 auto;
+			position: relative;
+		}
+		nav.menu>ul {}
+		nav.menu>ul>li {
+			float: left;
+			width: 20%;
+			background-color: orange;
+		}
+		nav.menu>ul>li:hover {background-color: red;}
+		nav.menu>ul>li:hover ul.sub {display: block;}
+		nav.menu>ul>li>a {
+			display: block;
+			text-align: center;
+			line-height: 40px;
+			color: white;
+		}
+
+		nav.menu ul.sub {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			background-color: red;
+		}
+		nav.menu ul.sub li{
+			float: left;
+			width: 80px;
+		}
+		nav.menu ul.sub li a{
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<nav class="menu">
+		<ul class="clearfix">
+			<li>
+				<a href="#">MENU01</a>
+				<ul class="sub clearfix">
+					<li><a href="#">sub1_1</a></li>
+					<li><a href="#">sub1_2</a></li>
+					<li><a href="#">sub1_3</a></li>
+					<li><a href="#">sub1_4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU02</a>
+				<ul class="sub" style="padding-left: 150px">
+					<li><a href="#">sub2_1</a></li>
+					<li><a href="#">sub2_2</a></li>
+					<li><a href="#">sub2_3</a></li>
+					<li><a href="#">sub2_4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU03</a>
+				<ul class="sub" style="padding-left: 350px">
+					<li><a href="#">sub3_1</a></li>
+					<li><a href="#">sub3_2</a></li>
+					<li><a href="#">sub3_3</a></li>
+					<li><a href="#">sub3_4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU04</a>
+				<ul class="sub"style="padding-left: 550px">
+					<li><a href="#">sub4_1</a></li>
+					<li><a href="#">sub4_2</a></li>
+					<li><a href="#">sub4_3</a></li>
+					<li><a href="#">sub4_4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU05</a>
+				<ul class="sub" style="padding-left: 650px">
+					<li><a href="#">sub5_1</a></li>
+					<li><a href="#">sub5_2</a></li>
+					<li><a href="#">sub5_3</a></li>
+					<li><a href="#">sub5_4</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
