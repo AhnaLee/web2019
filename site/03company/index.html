@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	
 	<style>
 		/* slider area */
@@ -36,17 +38,18 @@
 		    position: absolute;
 		    bottom: 30px;
 		    width: 100%;
-		}
+		}/*슬라이더 스타일 */
 	</style>
 	<script>
 		$(document).ready(function(){
 			$('.slider_01').bxSlider ();
 			$('.slider_02').bxSlider ();
 		})
+		new WOW().init();
 	</script>
 </head>
 <body>
-	<header id="header">
+	<header id="header"> <!-- 헤더영역  -->
 		<div class="visual">
 			<ul class="slider_01">
 				<li><img src="images/slider01.png" alt="이미지1"></li>
@@ -70,91 +73,64 @@
 		<section id="sec_wrap">
 			<div class="con_wrap">
 				<ul class="clearfix">
-					<li><a href="#">해피</a></li>
-					<li><a href="#">배민</a></li>
-					<li><a href="#">요기요</a></li>
-					<li><a href="#">카카오</a></li>
+					<li class="wow tada"><a href="#">해피</a></li>
+					<li class="wow tada"><a href="#">배민</a></li>
+					<li class="wow tada"><a href="#">요기요</a></li>
+					<li class="wow tada"><a href="#">카카오</a></li>
 					<li><a href="#">이벤트1</a></li>
 					<li><a href="#">이벤트2</a></li>
 					<li><a href="#">매장찾기</a></li>
 				</ul>
 			</div>
-			<style>
+			<style> 
+				/*카드 스타일 */
 		
-				div.card {width: 220px;height: 375px;background-color: #fff;position:absolute;top:100px;left:900px;border-radius:10px;
+				div.card {width: 220px;height: 375px;padding:20px;background-color: #fff;position:absolute;top:100px;left:900px;border-radius:10px;
 					box-shadow: 0 0 10px #000}
-				div.card img {width:200px;height:200px;display:block;position: absolute;top:150px;left:100px; animation-name: cake;
+				div.card img {width:200px;height:200px;display:block;position: absolute;top:150px; left:90px; animation-name: cake;
 					animation-duration:1.5s;animation-iteration-count: infinite;}
 				@keyframes cake {
 					0% {top:150px;}
 					50% {top:170px;}
 					100% {top:150px;}
 				}
-				div.card .card_body {
-					width: 180px;
-					height: 100px;
-					padding-top: 10px;
-				}
-				div.card .card_body .card_title {
-					color: orange;
-					font-size: 1.2em;
-					font-weight: bold;
-					padding-left: 10px;
-					padding-bottom: 10px;
-				}
-				div.card .card_body .card_text {
-					color: #000;
-					font-size: 0.8em;
-					padding-left: 20px;
-					margin-bottom: 20px;
-				}
-				div.card .card_body a{
-					display: block;
-					padding-left: 20px;
-				}
-				div.card.w400{
-					width: 400px;
-					height: 180px;
-					left: 460px;
-				}
-				div.card.w400>img {
-					position: absolute;
-					top: 20px;
-					left: 200px;
-					animation-name: drink;
-					animation-duration: 1.5s;
-					animation-iteration-count: infinite;
-					animation-delay: 0.3s;
-				}
+				div.card .card_body {width: 200px;height: 100px;padding-top: 10px;}
+				div.card .card_body .card_title {color: orange;font-size: 1.1em;font-weight: bold;padding-left: 10px;}
+				div.card .card_body .card_text {color: #000;font-size: 0.8em; padding-left:10px;margin-bottom: 10px;}
+				div.card .card_body a{display: block;padding-left: 20px;}
 
-				@keyframes drink {
-					0% {top: 20px;}
-					50% {top:30px;}
-					100% {top:20px;}
-				}
-				.w315 {	
-					width:315px !important;
-					height:280px !important;
-					left:50px !important;
-					top:300px  !important;
-				}
-				.card.w315 img {
-					position: absolute !important;
-					top: 50px !important;
-					left:200px !important;
-					animation-name: ice_cream;
-					animation-duration: 1.5s;
-					animation-delay: 0.5s;
+				div.card.w400{width: 400px;height: 180px;left: 460px;}
+				div.card.w400>img {position: absolute;top: 20px;left: 220px;animation-name: drink;animation-duration: 1.5s;
+					animation-iteration-count: infinite;animation-delay: 0.3s;}
+				@keyframes drink {0% {top: 20px;} 50% {top:30px;} 100% {top:20px;}}
 
-				}
-				@keyframes ice_cream {
-					0% {top: 50px;}
-					50% {top:60px;}
-					100% {top:50px;}
-				}
-				.w315 .card_title {
-					font-size: 1.1em !important;
-				}
+				.w315 {	width:315px !important; height:250px !important;left:50px !important;top:300px  !important;}
+				.card.w315 img {position: absolute !important;top: 50px !important;left:200px !important;
+					animation-name: ice_cream;animation-duration: 1.5s;animation-delay: 0.5s}
+				@keyframes ice_cream {0% {top: 50px;} 50% {top:60px;} 100% {top:50px;}}
+				.w315 .card_title {font-size: 1.1em !important; padding: 20px 10px 30px 10px;}
+
+				.w400_02 {width: 400px !important;height: 180px !important;left: 460px !important;top: 350px !important;}
+				div.card.w400_02>img {position: absolute;top: 0 !important;left: 200px;animation-name: dessert;animation-duration: 1.5s;animation-iteration-count: infinite;animation-delay: 0.6s;}
+				@keyframes dessert { 0% {top: 0px;} 50% {top:10px;} 100% {top:0px;}}
+				
+				/* 컨텐츠 영역 */
+				.section {height: 700px;background:url(images/contentsbg02.jpg) no-repeat center fixed;
+				 background-attachment: fixed;/*모바일 사용 안됨 */background-size:cover;}
+				.section>.contents {width: 1260px;margin: 0 auto; padding-top: 70px;}
+				.section h4 {text-align: center; color:#BE80BF;}
+				.section h4:after {content: "";display: block;width: 70px;height: 2px;background-color: #BE80BF;margin:10px auto;}
+				.section>.contents>p {text-align: center; color:#BE80BF; font-weight: bold; margin-bottom: 70px;}
+				.section>.contents>ul{}
+				.section>.contents>ul>li {float: left;margin-right: 20px;transition: 0.3s;}
+				.section>.contents>ul>li:last-child {margin-right: 0;}
+				.section>.contents>ul>li:hover {box-shadow: 8px 8px 10px rgba(255,255,255,0.5);transform: translate(-10px,-10px);}
+				.section>.contents>ul>li .card01{width: 300px;height: 380px; background-color:rgba(255,255,255,0.50);border-radius: 5px;padding-top: 45px;cursor: pointer;}
+				.section>.contents>ul>li:hover .card01 {transform: rotateZ(2deg);}
+				.section>.contents>ul>li .card01 img{display: block; margin: 0 auto;}
+				.section>.contents>ul>li .card-body01{ text-align: center;margin bottom: 30px; }
+				.section>.contents>ul>li .card01 .card-title01{font-size:1.5em;font-weight:bold;margin-bottom:10px;}
+				.section>.contents>ul>li .card01 .card-txt01{padding-top:10px;} /*카드&컨턴츠 스타일 */
 			</style>
 			<div class="visual_02">
 				<div class="slider_02">
@@ -184,12 +160,111 @@
 								<a href="#">more</a>
 							</div>
 						</div>
+						<div class="card w400_02">
+							<img src="images/dessert01.png" alt="">
+							<div class="card_body">
+								<h3 class="card_title">아이스 버블 스트로베리</h3>
+								<p class="card_text">쫀득한 찹쌀떡 속에 숨겨져 있는 베리베리스트로베리 아이스크림의 절묘한 조화</p>
+								<a href="#">more</a>
+							</div>
+						</div>
 					</li>
 					<li><img src="images/slide2_01.png" alt=""></li>
 					<li><img src="images/slide2_02.png" alt=""></li>
-				</div>
+				</div><!-- 헤더 슬라이더 2영역  -->
 			</div>
 		</section>
 	</header>
+	<div class="section"> <!-- 컨텐츠영역  -->
+		<div class="contents">
+			<h4>베스킨라빈스</h4>
+			<p>LINE UP</p>
+			<ul class="clearfix">
+				<li onclick="location.href='http://www.naver.com'">
+					<div class="card01">
+						<img src="images/icon03.png" alt="oreo">
+						<div class="card-body01">
+							<p class="card-title01">Ice Cream</p>
+							<p class="card-txt01">프리미엄 아이스크림의 기준<br>베스킨라빈스</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card01">
+						<img src="images/cake02.png" alt="oreo">
+						<div class="card-body01">
+							<p class="card-title01">Dessert</p>
+							<p class="card-txt01">아이스크림을 더욱 재미있게<br>간단하게 즐기는 방법!</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card01">
+						<img src="images/drink_icon.png" alt="oreo">
+						<div class="card-body01">
+							<p class="card-title01">Beverage</p>
+							<p class="card-txt01">아이스크림으로 즐기는<br>베스킨라빈스만의 음료</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card01">
+						<img src="images/cake_icon.png" alt="oreo">
+						<div class="card-body01">
+							<p class="card-title01">IceCream Cake</p>
+							<p class="card-txt01">아이와 어른이 좋아하는<br>아이스크림을<br>하나의 케이크에서 모두 즐기세요</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<style>
+		div#recruit {width: 1260px;margin:0 auto;}
+		#recruit h3 {font-size: 2em;text-align: center; color:#66391C; margin-top: 30px; margin-bottom: 10px;}
+		#recruit h3:after {content:""; display: block; width: 100px; height: 3px; background-color:#66391C; margin:10px auto;}
+		#recruit>p {text-align: center;margin-bottom:70px;}
+		#recruit .re_box {position: relative;margin-bottom: 20px;margin-top: 20px;}
+		.re_box .part_time,.re_box .full_time{position: absolute;width: 322px;height: 377px; border: 1px solid #E6E2DA; border-radius: 10px;}
+		.re_box .part_time{left:200px;}
+		.re_box .full_time{right:200px;}
+		.re_box img {width: 100px;height: 122px;margin-left:100px;}
+		.re_box .re_title {width: 100px;height:11px;margin-bottom: 0;}
+		.re_box .sub_title {width:278px;height:60px; margin:0 auto; margin-left: 20px;}
+		.re_box .re_txt {width: 250px; height: 50px;font-size: 10px; margin:0 auto;margin-top:20px; text-align: center;}
+		.re_box .btn {display: block;width: 120px;height: 40px;background-color: #FF7C98; color: white; border-radius:20px;text-align: center;line-height: 40px;font-size: 13px;margin:20px auto;}
+	</style>
+	<div id="recruit">
+		<h3>RECRUIT</h3>
+		<p>당신의 소중한꿈, 베스킨라빈스와 함께</p>
+			<ul class="re_box">
+				<li>
+					<div class="part_time">
+						<img class="re_title" src="images/jobs_title2.gif">
+						<img class="sub_title" src="images/jobs_title3.gif">
+						<img src="images/jobs_img_1.jpg" alt="">
+						<p class="re_txt">즐거운 일터에서 함께 일하며 경험을 쌓고,<br>
+										다양한 혜택이 함께하는 최고의 기회를 누려보세요!<br>
+										가맹점 아르바이트는<br>
+										아르바이트 포털 사이트에서 모집하고 있습니다.</p>
+						<a href="#" class="btn">자세히보기</a>
+					</div>
+				</li>
+				<li>
+					<div class="full_time">
+						<img class="re_title" src="images/jobs_title2.gif">
+						<img class="sub_title" src="images/jobs_title3.gif">
+						<img src="images/jobs_img_2.jpg" alt="">
+						<p class="re_txt">끊임없는 혁신으로 성공을 창조해온 배스킨라빈스!<br>
+										이곳에서 당신의 소중한 꿈을 펼쳐보세요!<br>
+										배스킨라빈스 사무직은<br>
+										비알코리아 사이트를 통해 모집하고 있습니다.</p>
+						<a href="#" class="btn">자세히보기</a>
+					</div>
+				</li>
+			</ul>
+	</div>
+	<div style="height: 500px;"></div>
 </body>
 </html>

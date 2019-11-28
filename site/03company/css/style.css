@@ -6,7 +6,7 @@ header#header {
 }
 #header .nav_wrap {
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top:0;
 }
 #header .nav_wrap .main_wrap {
@@ -63,7 +63,7 @@ section#sec_wrap {
 	line-height: 315px;
 	width: 315px
 	height: 315px;
-	text-indent: 9999px;
+	text-indent: -9999px;
 }
 
 #sec_wrap .con_wrap>ul>li:nth-child(1){background: url(../images/banner01.png);}
@@ -80,3 +80,6 @@ section#sec_wrap {
 	height: 630px;
 }
 #sec_wrap .visual_02 {}
+
+
+
