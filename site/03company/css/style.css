@@ -143,5 +143,23 @@ footer#footer {
 	background-color: #fff;
 }
 /* sub01 area */
-div#sub_header {}
+div#sub_header {width: 100%;}
+#header_top {
+	width: 1260px;
+	background-color: pink;
+	margin:0 auto;
+}
+#header_top h3 {}
+#header_top .main_menu {}
+#header_top .main_menu ul{}
+#header_top .main_menu li{
+	float: left;
+	width: 200px;
+}
+#header_top .main_menu a{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+}
 
+.sub01 {}
