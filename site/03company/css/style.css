@@ -81,5 +81,67 @@ section#sec_wrap {
 }
 #sec_wrap .visual_02 {}
 
+footer#footer {
+	background-color: #ccc;
+	height: 200px;
+}
+#footer .ft_wrap{
+	width: 1260px;
+	margin: 0 auto;
+	position: relative;
+}
 
+.ft_wrap h3 {
+	width: 180px;
+	height: 40px;
+	margin-left: 30px;
+	padding-top: 80px;
+	position: absolute;
+	left: 0;
+}
+.ft_wrap .main_ft {
+	width: 850px;
+	position: absolute;
+	right:200px;
+	top: 50px;
+}
+.ft_wrap .main_ft li {
+	float: left;
+	width: 141.67px;
+	position: relative;
+}
+.ft_wrap .main_ft li:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 10px;
+	background-color: #444444;
+	position: absolute;
+	top: 15px;
+}
+.ft_wrap .main_ft li:first-child:after {
+	content: "";
+	display: none;
+}
+
+.ft_wrap .main_ft a {
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+}
+.ft_wrap .main_ft p.ft_txt {
+	text-align: center;
+	font-size: 12px;
+}
+#footer button { 
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	right:0;
+	top: 80px;
+	background-color: #fff;
+}
+/* sub01 area */
+div#sub_header {}
 
