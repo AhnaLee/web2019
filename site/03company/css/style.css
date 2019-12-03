@@ -143,14 +143,13 @@ footer#footer {
 	background-color: #fff;
 }
 /* sub01 area */
-div#sub_header {width: 100%;}
+div#sub_header {width: 100%;height: 458px;}
 #header_top {
 	width: 1260px;
-	background-color: pink;
 	margin:0 auto;
 }
 #header_top h3 {}
-#header_top #main_menu {}
+#header_top #main_menu {float: right;margin-top: 50px;}
 #header_top #main_menu ul{}
 #header_top #main_menu li{
 	float: left;
@@ -160,6 +159,10 @@ div#sub_header {width: 100%;}
 	display: block;
 	text-align: center;
 	line-height: 40px;
+	color: white;
 }
 
-.sub01 {}
+.sub01 {
+	background:url(../images/subimg01.jpg)no-repeat center;
+	background-size: cover;
+}
