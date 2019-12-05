@@ -37,8 +37,9 @@ header#header {
 #header .nav_wrap .menu_wrap li a {
 	display: block;
 	line-height: 40px;
-	color: #6f7172;
+	color: #2A7397;
 	font-weight: bold;
+	font-size: 1.8em;
 }
 #header .slider_01 {
 	width: 100%
@@ -168,6 +169,8 @@ div#sub_header {
 	text-align: center;
 	line-height: 40px;
 	color: black;
+	font-weight:bold;
+	font-size: 1.5em;
 }
 
 .sub01 {
@@ -179,7 +182,11 @@ div#sub_header {
 	background-size: cover;
 }
 .sub03 {
-	background:url(../images/subimg_03.jpg) no-repeat center;
+	background:url(../images/sub_03.jpg) no-repeat center;
+	background-size: cover;
+}
+.sub04 {
+	background:url(../images/about.jpg) no-repeat center;
 	background-size: cover;
 }
 #sub_header .visual {width: 350px;margin:0 auto;}
@@ -189,6 +196,7 @@ div#sub_header {
 	position: absolute;
 	top:50%;
 	margin-top: -50px;
+	font-weight: bold;
 }
 #sub_header .visual_txt h3 {
 	font-size: 2.3em;
