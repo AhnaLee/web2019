@@ -173,6 +173,14 @@ div#sub_header {
 	background:url(../images/subimg_01.jpg) no-repeat center;
 	background-size: cover;
 }
+.sub02 {
+	background: url(../images/subimg_02.jpg) no-repeat center;
+	background-size: cover;
+}
+.sub03 {
+	background:url(../images/subimg_03.jpg) no-repeat center;
+	background-size: cover;
+}
 #sub_header .visual {width: 350px;margin:0 auto;}
 	
 #sub_header .visual .visual_txt{
@@ -198,9 +206,18 @@ div#sub_header {
 	left: 50%;
 	margin-left:-500px;
 }
-#sub_header .depth2 ul {}
+#sub_header .depth2-3 {
+	width: 500px;
+	background-color: #EAEAEA;
+	margin-top: 142px;
+	border-bottom: 1px solid #B8307C; 
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left:-250px;
+}	
 
-#sub_header .depth2 li {
+#sub_header .depth2 li,#sub_header .depth2-3 li {
 	float: left; 
 	width: 250px;
 	margin-bottom: 0;
@@ -210,9 +227,12 @@ div#sub_header {
 	border-right: 1px solid #D1D1D1;
 }
 
-#sub_header .depth2 .on {
+#sub_header .depth2 .on,#sub_header .depth2-3 .on {
 	background-color: #B8307C;
 	color: white;
+}
+#sub_header .depth2 a,#sub_header .depth2-3 a {
+	display: block;
 }
 .contents {width: 1260px;margin:0 auto;}
 div.location {

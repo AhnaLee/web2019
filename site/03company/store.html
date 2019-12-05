@@ -10,7 +10,7 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<div id="sub_header" class="sub01">
+	<div id="sub_header" class="sub03">
 		<div id="header_top" class="clearfix">
 			<a href="index.html"><img src="images/logo.png" alt=""></a>
 			<nav id="main_menu">
@@ -24,16 +24,14 @@
 		</div>
 		<div class="visual">
 			<div class="visual_txt">
-				<h3>MENU</h3>
-				<P>프리미엄 아이스크림의 기준,베스킨라빈스</P>
+				<h3>STORE</h3>
+				<P>전국에 베스킨라빈스 매장을 찾아보세요!</P>
 			</div>
 	 	</div>
-		<div class="depth2">
+		<div class="depth2-3">
 			<ul class="clearfix">
-				<li class="on">Ice Cream</a></li>
-				<li><a href="sub02.html">Drink</a></li>
-				<li><a href="sub03.html">Ice-Cake</a></li>
-				<li><a href="sub04.html">Dessert</a></li>
+				<li class="on"><a href="store.html">매장찾기</a></li>
+				<li><a href="store02.html">고객센터</a></li>
 			</ul>
 		</div>
 	</div>
@@ -41,18 +39,32 @@
 		<div class="location">
 			<ul class="clearfix">
 				<li><a href="#"><i class="fas fa-home"> <i class="fas fa-chevron-right"></i></i></a></li>
-				<li><a href=""><span>Menu</span> <i class="fas fa-chevron-right"></i></a></li>
-				<li>Ice Cream</li>
+				<li><a href=""><span>Store</span> <i class="fas fa-chevron-right"></i></a></li>
+				<li>매장찾기</li>
 			</ul>
 		</div>
-		<h3 class="subtitle">ICE CREAM</h3>
-		<div class="best">
-			<img src="images/best_title.png" alt="" class="bestTitle">	
-			<img src="images/best_01.jpg" alt="" class="bestProduct">
-		</div>
-		<h4 class="ice_title"><img src="images/h_title_A.png" alt=""></h4>
+		<h3 class="subtitle">FIND STORE</h3>
 		<div class="ice_menu">
-			<img src="images/ice_product.png" alt="">
+			<!-- <img src="images/ice_product.png" alt=""> -->
+			<!-- * 카카오맵 - 지도퍼가기 -->
+			<!-- 1. 지도 노드 -->
+			<div id="daumRoughmapContainer1575514329259" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+			<!--
+				2. 설치 스크립트
+				* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+			-->
+			<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+			<!-- 3. 실행 스크립트 -->
+			<script charset="UTF-8">
+				new daum.roughmap.Lander({
+					"timestamp" : "1575514329259",
+					"key" : "w4wo",
+					"mapWidth" : "1260",
+					"mapHeight" : "500"
+				}).render();
+			</script>
 		</div>
 	</div>
 	<footer id="footer">
@@ -76,4 +88,4 @@
 	</footer>
 	
 </body>
-</html>
+</html> 
