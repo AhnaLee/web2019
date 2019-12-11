@@ -1,0 +1,1 @@
+//javascript 객채 문법
