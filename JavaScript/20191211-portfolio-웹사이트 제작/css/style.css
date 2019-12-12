@@ -63,6 +63,8 @@ article{width:-webkit-calc(100% - 280px); width:-moz-calc(100% - 280px); width:c
 
 .cont-box:nth-child(7) .rgba .table, .cont-box:nth-child(11) .rgba .table, .cont-box:nth-child(12) .rgba .table{width:50%;}
 
+.icon {display: none;}
+.mobile {display: none;}
 
 
 
