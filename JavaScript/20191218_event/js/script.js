@@ -25,23 +25,23 @@ console.log("브라우저 세로폭 : "+$realHeight);
 var $write = document.getElementById("writeSize");
 
 var $box = document.getElementById("box");
-function resizeEvt(){
-	var $realWidth = window.innerWidth; 
-	console.log($realWidth);
-	if($realWidth<1200){//pc 모니터 구간 제외(w:1200 미만)
-		if($realWidth<768){ //모바일 구간 (w: 768 미만)
-			$write.innerHTML ="<span>모바일 구간</span>"
-			$box.setAttribute("class", "mobile");
-		}else{//테블릿 구간 (w:768~1199)
-			$write.innerHTML ="<span>테블릿 구간</span>"
-			$box.setAttribute("class", "tablet");
-		};
-	}else{//pc 모니터 구간 
-		$write.innerHTML ="<span>pc 구간</span>"
-		$box.setAttribute("class", "pc");
-	};
-};
-resizeEvt(); // 최초 브라우저 로딩시 이벤트를 발생시켜, 현재 사이즈에 해당하는 항목을 실행하도록 설정
+// function resizeEvt(){
+// 	var $realWidth = window.innerWidth; 
+// 	console.log($realWidth);
+// 	if($realWidth<1200){//pc 모니터 구간 제외(w:1200 미만)
+// 		if($realWidth<768){ //모바일 구간 (w: 768 미만)
+// 			$write.innerHTML ="<span>모바일 구간</span>"
+// 			$box.setAttribute("class", "mobile");
+// 		}else{//테블릿 구간 (w:768~1199)
+// 			$write.innerHTML ="<span>테블릿 구간</span>"
+// 			$box.setAttribute("class", "tablet");
+// 		};
+// 	}else{//pc 모니터 구간 
+// 		$write.innerHTML ="<span>pc 구간</span>"
+// 		$box.setAttribute("class", "pc");
+// 	};
+// };
+// resizeEvt(); // 최초 브라우저 로딩시 이벤트를 발생시켜, 현재 사이즈에 해당하는 항목을 실행하도록 설정
 
 var $head_bg = document.getElementById("head_part");
 
@@ -58,9 +58,21 @@ function scrollEvt(){
 		$img.style.paddingTop="0px";
 	};
 };
+scrollEvt(); //최초 브라우저 로딩시 함수문을 로드하여 현재 스크롤 위치를 파악하고 해당하는 항목을 실행하라는 명령
 
+var $section = document.getElementById("sec");
+function changeSize(){
+ var $bx_width = window.innerWidth;
+ var $bx_height = window.innerHeight;
+ $section.style.width = $bx_width + "px"; 
+ $section.style.height = $bx_height + "px"; 
+ $section.style.background = "#aaffaa";
+};
+function resizeEvt(){
+	changeSize(); //해상도가 조정이 되었을 때 함수문을 실행해라 라는 호출문 
+};
 
-
+changeSize(); //최초 브라우저 로딩시 함수문을 실행하라는 호출문
 
 
 

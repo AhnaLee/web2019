@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+body { list-style: none; }
+#result_01 {
+	width: 400px;
+	height: 50px;
+	background-color: #aaffaa;
+}
+#result_02{
+	width: 400px;
+	height: 50px;
+	background-color: #ffaaff;
+}
+#result_03 {
+	width: 750px;
+	height: 200px;
+}
+.kakao_bx {
+	width: 225px;
+	float: left;
+	color: red;
+	font-weight: bold;
+}
