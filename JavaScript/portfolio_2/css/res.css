@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@media(max-width:1599px){
+
+	header{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	}
+	.logo{
+	width: auto;
+	height: auto;
+	position: absolute;
+	padding:15px 0 0;
+	left:20px;
+
+	}
+	.logo img{
+		width: auto;
+		height:50px;
+	}
+	.line{width: 100%;height: auto;}
+	nav>ul{text-align: center; font-size:0;}
+
+	nav>ul>li{
+		display: inline-block; margin:0 10px;
+    	line-height: 80px;
+	}
+
+	.link{
+		bottom:auto;
+		top:50%;
+		right:20px;
+		transform: translate(0, -50%);
+		width:auto;
+
+	}
+	.cont-01{
+	display: none;
+	}
+	.cont-02>h3{
+	display:none;
+	}
+	.cont-10{
+	background: #e3f1fb;
+	}
+	.cont-10>h2{color:#9ea6ac;}
+	.cont-10>p{color:#9ea6ac;}
+	h3{
+	display: none;
+	}
+	p{font-style:italic;}
+	h4{text-align: center;}
+	article{
+	width:100%;
+	height: auto;
+	margin-left:0px;
+	}
+
+}
+
+@media(max-width:1279px){
+
+	.line{width: auto;height: auto;float: right;}
+	.link{display: none;}
+	.cont-02{width: 75%;}
+	.cont-03{width: 25%;}
+	.cont-04{width: 25%;}
+	.cont-05{width: 25%;}
+	.cont-06{width: 25%; background-position: 50% 20%;}
+	.cont-07{width: 50%;}
+	.cont-08{width: 50%; background-position: 50% 70%;}
+	.cont-09{width: 25%;}
+	.cont-10{width: 25%;}
+	.cont-11{width: 50%; background-position: 50% 30%;}
+	.cont-12{width: 25%;}
+	.cont-13{width: 25%;}
+}
+
+@media(max-width:1023px){
+
+	.cont-02{width: 100%;}
+	.cont-03{width: 66.66%;}
+	.cont-04{width: 33.33%;}
+	.cont-05{display: none;}
+	.cont-06{width: 33.33%;}
+	.cont-07{width: 66.66%;}
+	.cont-08{display: none;}
+	.cont-09{width: 33.33%;}
+	.cont-10{width: 33.33%;}
+	.cont-11{display: none;}
+	.cont-12{width: 33.33%;}
+	.cont-13{display: none;}
+}
+
+@media(max-width:767px){
+
+	.cont-02{width: 100%;}
+	.cont-03{width: 100%;}
+	.cont-04{display: none;}	
+	.cont-06{width: 50%;}
+	.cont-07{width: 50%;}	
+	.cont-09{width: 50%;}
+	.cont-10{width: 50%;}	
+	.cont-12{width: 50%;}
+	.cont-13{width: 50%; display: block;}	
+}
+
+@media(max-width:639px){
+	header{
+	height: 130px;
+	position: relative;
+	}
+	.cont-box{height: 150px;}
+	.logo{
+	width: 100%;
+	text-align: center;
+	position: static;
+
+	}
+	.logo img{
+		width: auto;
+		height:50px;
+	}
+	.line{width: 100%;}
+	nav>ul>li{width: 25%;margin: 0;line-height: 60px;}
+	.cont-06{background-position: 50% -2%;}
+	.cont-13{background-position: 50% -35%;}
+	p{display: none;}
+
+}
