@@ -20,6 +20,7 @@ nav{}
 nav>ul{}
 nav>ul>li{padding: 15px 100px;}
 nav>ul>li>a{display: block; color: #555555;font-weight: bold;}
+nav>ul>li:nth-child(1) i,nav>ul>li:nth-child(3) i{font-style: italic;}
 
 div.sns_icon {width: 100%;position:absolute; bottom:40px; text-align:center;}
 .sns_icon ul {}
@@ -46,6 +47,7 @@ article .cont-6 {width: 40%;height: 250px;}
 article .cont-7 {width: 20%;height: 250px;background: url(../img/pic13.jpg) no-repeat;background-size: cover;}
 article .cont-8 {width: 20%;height: 250px;}
 article .cont-9 {width: 40%;height: 250px;background-color: #6ce2fb;}
+article .cont-9 h2, article .cont-9 p{color: white;}
 .cont-9 img {position: absolute;right:-120px;bottom: -30px;}
 article .cont-10 {width: 20%;height: 250px;background: url(../img/pic10.jpg) no-repeat;background-size: cover;}
 article .cont-11 {width: 20%;height: 250px;}
