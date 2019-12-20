@@ -61,19 +61,103 @@ $(document).ready(function(){
 	$("#cont_search p.cont_01").has("span").css("border-bottom","4px solid #0000ff");
 	$("#cont_search p.cont_01").not(":last").css("font-style","italic");
 
+	/* is() 메서드 : 현재 상태의 유부를 체크하여 true 또는 false 를 반환 (논리형 데이터로 반환) */
+	var $isChk = $("#agree").is(":checked");
+	console.log($isChk);
+
+	/* each 문은 선택자에 의해 해당하는 요소를 선택하지만 이때 개별적인 요소로 순차 접근함*/
+	$(".each_box>li").each(function(index){ // index라는 매개변수, each문에서 접근시 최초의 인덱스 번호로 0을 자동으로 선택 index=0
+		// 1.자동으로 부여된 인덱스 번호의 0에 따라서 <li>Labtop</li>(첫번째 li) 접근
+
+		if(index > 2){
+			$(this).css("color","red");
+		}else{
+			$(this).css("color","green");
+		}
+	});
 
 
 
+	var $arr_box = ["orange", "red", "green", "yellow"];
+	var $arr_txt = ["box_01","box_02","box_03","box_04"];
+
+	var $repeat = ""; //undefined  data형태가 정의되지 않은 초기값.
+	for(i=0; i<4; i++){
+		$repeat += "<div class='in_box'></div>"
+	};
+
+	$(".each_box_01").html($repeat);
 
 
+	$(".each_box_01 .in_box").each(function(a){ // a= 0,1,2,3
+		$(this).css("background", $arr_box[a]);
+		$(this).text($arr_txt[a]);
+	});
 
+	var $html_txt = $(".html_txt").html();
+	console.log($html_txt);
+	$(".html_txt").html("02. <span>사생결단</span>");
 
+	$(".detail").text("-감추기");
+	$(".detail").text("<span>-감추기</span>");
+	/* html() 메서드와는 달리 text()메서드는 내부에 들어가는 텍스트로 인식하기떄문에 태크명을 포함하였다면 태그명 조차도 텍스트로 인식이 됨*/
 
+	var $pic_img = $(".ch_img").attr("src");
+	console.log($pic_img);
+	$(".ch_img").attr({"src":"img/pic-2.jpg", "alt":"이미지2"});
+	// $(".ch_img").attr("alt","이미지2");
 
+	$(".control_txt").addClass("active"); //선택자에 지정한 클래스를 추가
+	$(".control_txt").removeClass("active"); //선택자에 지정한 클래스를 제거
 
+	var $has_class = $(".control_txt").hasClass("active"); //선택자가 지정한 클래스를 가지고있는지에 대한 유무를 판단 . true 또는 flase
+	 console.log($has_class);
+	 if($has_class == true){
+	 	$(".control_txt").text("active 클래스가 있습니다.")
+	 }else{
+	 	$(".control_txt").text("active 클래스가 없습니다.")
+	 }
 
+	 $(".control_txt").prop("id","active_box");
+	 var $val = $("#user_name").val(); // 기존의 value 속성의 값을 가져옴
+	 console.log($val);
+	 $("#user_name").val("이하늬");
 
+	 var $win_width = $(window).width();
+	 var $win_height = $(window).height();
+	 console.log("현재 브라우저의 가로 값 : "+ $win_width);
+	 console.log("현재 브라우저의 세로 값 : "+ $win_height);
 
+	 var $c_width = $(".property").width();
+	 console.log("width : "+$c_width);
 
+	 var $in_width = $(".property").innerWidth();
+	 console.log("innerWidth : "+$in_width);
+
+ 	 var $out_width = $(".property").outerWidth();
+	 console.log("outerWidth : "+$out_width);
+
+	 var $po_top = $(".po_in").position().top;
+	 console.log("position Y 위치 : "+$po_top);
+
+	 var $off_top = $(".po_in").offset().top;
+	 console.log("offset Y 위치 : "+$off_top);
+
+	 var $sc_top = $(window).scrollTop();
+	 console.log("브라우저 상단으로부터 스크롤 바가 이동한 위치 : "+$sc_top);
+
+	 $(window).scroll(function(){
+	 	var $sc = $(window).scrollTop();
+	 	console.log($sc);
+
+	 	if($sc >= $off_top){
+	 		$(".po_in").css("background","#ffffaa")
+	 	}else{
+	 		$(".po_in").css("background","#ffaaff")
+	 	}
+	 });
+	 $(".po_in").click(function(){
+	 	$("html, body").animate({scrollTop:$("body").offset().top},2000);
+	 });
 
 });
