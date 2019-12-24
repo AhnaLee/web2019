@@ -85,14 +85,14 @@ $(document).ready(function(){
  	 		$("#section").css("background","#ffaaff");
  	 	}
  	 });
- 	$(window).scroll(function(){
- 		var $scrollTop = $(this).scrollTop();
- 		if($scrollTop >= $("#mid_header").offset().top){
- 			$("#mid_header").css("position", "fixed");
- 		}else{
- 			$("#mid_header").css("position", "static");
- 		}
- 	});
+ 	// $(window).scroll(function(){
+ 	// 	var $scrollTop = $(this).scrollTop();
+ 	// 	if($scrollTop >= $("#mid_header").offset().top){
+ 	// 		$("#mid_header").css("position", "fixed");
+ 	// 	}else{
+ 	// 		$("#mid_header").css("position", "static");
+ 	// 	}
+ 	// });
  	function resize_ev(){
  		var $win_width = $(this).width();
  		console.log($win_width);
@@ -112,9 +112,42 @@ $(document).ready(function(){
 
  		$(this).attr("disabled", "disabled");
  	});
+ 	// #1 show() => display:block / hide() => display:none
+ 	$(".tab_btn li:eq(0)").click(function(){
+ 		$(".tab_cont>div:nth-child(1)").show();
+ 		$(".tab_cont>div:nth-child(2)").hide();
+ 		$(".tab_cont>div:nth-child(3)").hide();
+ 	});
+ 	 $(".tab_btn li:eq(1)").click(function(){
+ 		$(".tab_cont>div:nth-child(1)").hide();
+ 		$(".tab_cont>div:nth-child(2)").show();
+ 		$(".tab_cont>div:nth-child(3)").hide();
+ 	});
+ 	$(".tab_btn li:eq(2)").click(function(){
+ 		$(".tab_cont>div:nth-child(1)").hide();
+ 		$(".tab_cont>div:nth-child(2)").hide();
+ 		$(".tab_cont>div:nth-child(3)").show();
+ 	});
+	// #2 index() 메서드 활용하여 탭박스 구성 
+	/* $(".tab_btn li").click(function(){
+		var $index = $(this).index();
+		console.log($index);
+		$(".tab_btn li").removeClass("active_btn");
+		$(this).addClass("active_btn");
+		$(".tab_cont>div").removeClass("active_cont");
+		$(".tab_cont>div").eq($index).addClass("active_cont");
+		return false;
+	}); */
+	// #3 rel의 속성을 활용한 탭박스 구성
+	 $(".tab_btn li").click(function(){
+	 	var $rel = $(this).attr("rel");
+	 	console.log($rel);
+	 	$(".tab_btn li").removeClass("active_btn");
+	 	$(".tab_cont>div").removeClass("active_cont");
+	 	$("."+$rel).addClass("active_cont");
 
-
-
+	 	// return false;
+	 });
 
 
  });
