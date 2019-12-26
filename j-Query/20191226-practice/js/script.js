@@ -24,14 +24,20 @@ $(document).ready(function(){
     	$(this).slideUp();
     });
 
-    $(".test_11 p").hover(function(){
-    	var $highlight = $(this).hasClass("highlight")
-    	if($highlight == true){
-    		$(this).removeClass("highlight")
-    	}else{
-    		$(this).addClass("highlight")
-    	}
-    });
+    // $(".test_11 p").hover(function(){
+    // 	var $highlight = $(this).hasClass("highlight")
+    // 	if($highlight == true){
+    // 		$(this).removeClass("highlight")
+    // 	}else{
+    // 		$(this).addClass("highlight")
+    // 	}
+    // });
+     $(".test_11 p").hover(function(){
+     	$(this).addClass("highlight")
+     }, function(){
+     	$(this).removeClass("highlight")
+     });
+
 
     // test 12 => 조건1. 셀렉트 박스의 옵션을 변경할 때 그 내부 내용을 
     // 하단에 위치한 클래스명 result를 가진 요소에 나타나도록 
