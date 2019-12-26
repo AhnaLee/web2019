@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery - 기초 다지기_01</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<!--https://www.tutorialrepublic.com/jquery-examples.php-->
+
+		<h2>[선택자]</h2>
+		<div id="ex_01">
+			<h4 class="q_title">예제1)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (클래스 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 중 클래스명이 txt3인 것을 선택하여 문자의 색상을 red로 변경하고 폰트의 가중치(normal 또는 bold)를 bold로 스타일을 조정하세요.</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_01"&gt;
+					&lt;p class="txt1"&gt;파리&lt;/p&gt;
+					&lt;p class="txt2"&gt;로마&lt;/p&gt;
+					&lt;p class="txt3"&gt;런던&lt;/p&gt;
+					&lt;p class="txt4"&gt;베를린&lt;/p&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_01">
+				<p class="txt1">파리</p>
+				<p class="txt2">로마</p>
+				<p class="txt3">런던</p>
+				<p class="txt4">베를린</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_02">
+			<h4 class="q_title">예제2)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (아이디 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 중 아이디명이 select인 것을 선택하여 문자의 크기를 28px로 변경하고 배경색상을 #ffff00으로 스타일을 조정하세요.</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_02"&gt;
+					&lt;a href=""&gt;베스트셀러&lt;/a&gt;
+					&lt;a href="" id="select"&gt;E북 베스트&lt;/a&gt;
+					&lt;a href=""&gt;지식백과&lt;/a&gt;
+					&lt;a href=""&gt;오디오북&lt;/a&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_02">
+				<a href="">베스트셀러</a>
+				<a href="" id="select">E북 베스트</a>
+				<a href="">지식백과</a>
+				<a href="">오디오북</a>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_03">
+			<h4 class="q_title">예제3)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (그룹 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래의 p 태그 중 첫번째와 세번째를 함께 선택하여 글자색상을 #00dd00으로 스타일을 조정하세요.</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_03"&gt;
+					&lt;h4&gt;사이언스 트렌드&lt;/h4&gt;
+					&lt;p class="sience_01"&gt;구글의 양자컴퓨터, 슈퍼컴 능가했나&lt;/p&gt;
+					&lt;p class="sience_02"&gt;실패의 과학적 정의&lt;/p&gt;
+					&lt;p class="sience_03"&gt;달 지명 속에는 ‘사람’이 있다&lt;/p&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_03">
+				<h4>사이언스 트렌드</h4>
+				<p class="sience_01">구글의 양자컴퓨터, 슈퍼컴 능가했나</p>
+				<p class="sience_02">실패의 과학적 정의</p>
+				<p class="sience_03">달 지명 속에는 ‘사람’이 있다</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_04">
+			<h4 class="q_title">예제4)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (탐색 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 p 태그 중 2번째와 4번째를 함께 선택하여 배경색상을 #aaffff로 스타일을 조정하세요. (eq() 메서드 이용)</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_04"&gt;
+					&lt;h4&gt;비지니스 트렌드&lt;/h4&gt;
+					&lt;p class="trend"&gt;당신의 비즈니스를 업그레이드하는 가장 손쉬운 방법&lt;/p&gt;
+					&lt;p class="trend"&gt;프랑크푸르트 모터쇼를 통해 본 글로벌 자동차 트렌드&lt;/p&gt;
+					&lt;p class="trend"&gt;에어비앤비처럼 사유지를 캠핑장으로 빌려주는 '힙캠프'&lt;/p&gt;
+					&lt;p class="trend"&gt;디지털 마케팅에 펀테크(Fun Tech)를 더하다!&lt;/p&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_04">
+				<h4>비지니스 트렌드</h4>
+				<p class="trend">당신의 비즈니스를 업그레이드하는 가장 손쉬운 방법</p>
+				<p class="trend">프랑크푸르트 모터쇼를 통해 본 글로벌 자동차 트렌드</p>
+				<p class="trend">에어비앤비처럼 사유지를 캠핑장으로 빌려주는 '힙캠프'</p>
+				<p class="trend">디지털 마케팅에 펀테크(Fun Tech)를 더하다!</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_05">
+			<h4 class="q_title">예제5)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 p 태그 중 가운데를 기준으로 형제 요소를 모두 선택하여 글자 색상을 #0000ff로 스타일을 조정하세요. (eq() 메서드 이용+형제 탐색)</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_05"&gt;
+					&lt;h4&gt;내 마음에 쏙 드는 걷기 여행지 7&lt;/h4&gt;
+					&lt;p class="walk"&gt;양평 두물머리 물래길&lt;/p&gt;
+					&lt;p class="walk"&gt;전주 한옥마을 길&lt;/p&gt;
+					&lt;p class="walk"&gt;대전 장태산자연휴양림&lt;/p&gt;
+					&lt;p class="walk"&gt;천안 독립기념관 단풍나무 숲길&lt;/p&gt;
+					&lt;p class="walk"&gt;서울 안산자락길&lt;/p&gt;
+					&lt;p class="walk"&gt;대구 김광석 다시그리기길&lt;/p&gt;
+					&lt;p class="walk"&gt;영동 금강 둘레길&lt;/p&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_05">
+				<h4>내 마음에 쏙 드는 걷기 여행지 7</h4>
+				<p class="walk">양평 두물머리 물래길</p>
+				<p class="walk">전주 한옥마을 길</p>
+				<p class="walk">대전 장태산자연휴양림</p>
+				<p class="walk">천안 독립기념관 단풍나무 숲길</p>
+				<p class="walk">서울 안산자락길</p>
+				<p class="walk">대구 김광석 다시그리기길</p>
+				<p class="walk">영동 금강 둘레길</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_06">
+			<h4 class="q_title">예제6)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 중 "미디어센터" 텍스트를 선택(기준)하여 부모의 영역인 menu 클래스명의 모든 영역의 배경색상을 #ffff77로 스타일을 조정하세요. (eq() 메서드 이용+상위 선택자(closest))</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_06"&gt;
+					&lt;ul class="menu"&gt;
+						&lt;li&gt;&lt;a href=""&gt;회사소개&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;사회공헌&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;미디어센터&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;채용&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_06">
+				<ul class="menu">
+					<li><a href="">회사소개</a></li>
+					<li><a href="">사회공헌</a></li>
+					<li><a href="">미디어센터</a></li>
+					<li><a href="">채용</a></li>
+				</ul>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_07">
+			<h4 class="q_title">예제7)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (인접관계 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 중 "portfolio" 텍스트를 선택(기준)하여 부모의 영역인 main_menu 클래스명으로 올라가서 형제 요소인 side_menu 아이디명을 찾아 배경색상을 #aaffff로 스타일을 조정하세요. (eq() 메서드 이용+상위 선택자(closest)+형제 탐색)</p>
+			
+			<p class="q_detail"><b>조건2.</b> 하위에 존재하는 "-판매자"의 글자 색상을 #ff0000 으로 스타일을 조정하세요.  (eq() 메서드 이용+상위 선택자(closest)+형제 탐색+후손 선택자(find))</p>
+
+			<pre class="q_txt">
+				&lt;div class="test_07"&gt;
+					&lt;ul class="main_menu"&gt;
+						&lt;li&gt;&lt;a href=""&gt;About Us&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="" class="port"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;Project&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;ul id="side_menu"&gt;
+						&lt;li&gt;&lt;a href=""&gt;로그인&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;회원가입&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=""&gt;마이페이지 &lt;span&gt;-판매자&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_07">
+				<ul class="main_menu">
+					<li><a href="">About Us</a></li>
+					<li><a href="" class="port">Portfolio</a></li>
+					<li><a href="">Project</a></li>
+				</ul>
+				<ul id="side_menu">
+					<li><a href="">로그인</a></li>
+					<li><a href="">회원가입</a></li>
+					<li><a href="">마이페이지 <span>-판매자</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_07">
+			<h4 class="q_title">예제8)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요. (속성 선택자)</h4>
+			<p class="q_detail"><b>조건1.</b> 아래 중 type이 'text'인 입력 박스에 배경색상을 #ffffaa로 스타일을 조정하세요. </p>
+
+			<pre class="q_txt">
+				&lt;div class="test_08"&gt;
+					&lt;form&gt;
+						&lt;label&gt;Name: &lt;input type="text"&gt;&lt;/label&gt;
+						&lt;label&gt;Password: &lt;input type="password"&gt;&lt;/label&gt;
+						&lt;input type="submit" value="LOGIN"&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			</pre>
+
+			<div class="test_08">
+				<form>
+					<label>Name: <input type="text"></label>
+					<label>Password: <input type="password"></label>
+					<input type="submit" value="LOGIN">
+				</form>
+			</div>
+		</div>
+
+<hr>
+
+		<h2>[이벤트]</h2>
+		<div id="ex_09">
+			<h4 class="q_title">예제9)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 브라우저가 로딩되면서 아래 p 태그 내부의 글자를 "텍스트 변경 완료"로 새롭게 넣고 배경색상을 #aaffaa로 스타일을 조정하세요. (text() 메서드 이용)</p>
+
+	<pre class="q_txt">
+		&lt;div class="test_09"&gt;
+			&lt;p&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+
+			<div class="test_09">
+				<p></p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_10">
+			<h4 class="q_title">예제10)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 각 개별 박스를 클릭하면 박스가 사라지도록 조정하세요.(click() 이벤트와 slideUp() 효과 메서드 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_10 p{padding: 20px; font-size: 16px; background: #ffbb55; margin-bottom:4px;}
+		&lt;/style&gt;
+		&lt;div class="test_10"&gt;
+			&lt;p&gt;클릭시 개별 박스 없애기&lt;/p&gt;
+			&lt;p&gt;클릭시 개별 박스 없애기&lt;/p&gt;
+			&lt;p&gt;클릭시 개별 박스 없애기&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			
+
+			<style>
+				.test_10 p{padding: 20px; font-size: 16px; background: #ffbb55; margin-bottom:4px;}
+			</style>
+			<div class="test_10">
+				<p>클릭시 개별 박스 없애기</p>
+				<p>클릭시 개별 박스 없애기</p>
+				<p>클릭시 개별 박스 없애기</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_11">
+			<h4 class="q_title">예제11)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 각 개별 박스를 마우스오버하면 박스의 배경색상이 변경(#f2f2f2 → yellow) 되도록 클래스(highlight)를 추가하고, 반대로 마우스가 빠져나오면 색상이 원래상태로 돌아올 수 있도록 클래스명을 제거하세요.(hover() 이벤트 및 addClass()와 removeClass() 메서드 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_11 p{padding: 20px; font-size: 16px; background: #f2f2f2; margin-bottom:4px;}
+			.test_11 p.highlight{background: yellow;}
+		&lt;/style&gt;
+		&lt;div class="test_11"&gt;
+			&lt;p&gt;hover시 개별 박스 색상 변경&lt;/p&gt;
+			&lt;p&gt;hover시 개별 박스 색상 변경&lt;/p&gt;
+			&lt;p&gt;hover시 개별 박스 색상 변경&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			
+
+			<style>
+				.test_11 p{padding: 20px; font-size: 16px; background: #f2f2f2; margin-bottom:4px;}
+				.test_11 p.highlight{background: yellow;}
+			</style>
+			<div class="test_11">
+				<p>hover시 개별 박스 색상 변경</p>
+				<p>hover시 개별 박스 색상 변경</p>
+				<p>hover시 개별 박스 색상 변경</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_12">
+			<h4 class="q_title">예제12)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 셀렉트 박스의 옵션을 변경할 때 그 내부 내용을 하단에 위치한 클래스명 result를 가진 요소에 나타나도록 구성하세요. (change() 이벤트 및 val()와 text() 메서드 이용)</p>
+
+	<pre class="q_txt">
+		&lt;div class="test_12"&gt;
+			&lt;form&gt;
+				&lt;label&gt;여행가고 싶은 장소 : &lt;/label&gt;
+				&lt;select&gt;
+					&lt;option&gt;London&lt;/option&gt;
+					&lt;option&gt;Paris&lt;/option&gt;
+					&lt;option&gt;New York&lt;/option&gt;
+				&lt;/select&gt;
+			&lt;/form&gt;
+			&lt;p class="result"&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<div class="test_12">
+				<form>
+					<label>여행가고 싶은 장소 : </label>
+					<select>
+						<option>London</option>
+						<option>Paris</option>
+						<option>New York</option>
+					</select>
+				</form>
+				<p class="result"></p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_13">
+			<h4 class="q_title">예제13)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 브라우저의 크기를 가로 또는 세로를 변경할 때마다 클래스명 size_change를 가진 요소 하위에 "가로 : 000px", "세로 : 000px;"로 나타나도록 구성하세요. (resize() 이벤트 및 가로와 세로를 받을 수 있는 식 이용 : $(window).width();)</p>
+
+	<pre class="q_txt">
+		&lt;div class="test_13"&gt;
+			&lt;p class="size_change"&gt;
+				&lt;span&gt;가로 : &lt;/span&gt;
+				&lt;span class="widthTxt"&gt;&lt;/span&gt;
+				&lt;span&gt;, 세로 : &lt;/span&gt;
+				&lt;span class="heightTxt"&gt;&lt;/span&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<div class="test_13">
+				<p class="size_change">
+					<span>가로 : </span>
+					<span class="widthTxt"></span>
+					<span>, 세로 : </span>
+					<span class="heightTxt"></span>
+				</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_14">
+			<h4 class="q_title">예제14)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 브라우저에서 스크롤 바를 움직일 때마다 스크롤바의 상단 높이 위치를 저장하여 클래스명 scroll_top을 가진 요소 하위에 "현재 스크롤바 상단 위치 : 000px"로 나타나도록 구성하세요. (scroll() 이벤트 및 스크롤바의 위치를 받을 수 있는 식 이용 : $(window).scrollTop();)</p>
+
+	<pre class="q_txt">
+		&lt;div class="test_14"&gt;
+			&lt;p class="scroll_top"&gt;
+				&lt;span&gt;현재 스크롤바 상단 위치 : &lt;/span&gt;
+				&lt;span class="scroll_location"&gt;&lt;/span&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<div class="test_14">
+				<p class="scroll_top">
+					<span>현재 스크롤바 상단 위치 : </span>
+					<span class="scroll_location"></span>
+				</p>
+			</div>
+		</div>
+
+<hr>
+
+		<h2>[효과 메서드]</h2>
+		<div id="ex_15">
+			<h4 class="q_title">예제15)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)</p>
+			<p class="q_detail"><b>조건2.</b> 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 "보여주고", "감추기"를 구현하세요.(show(), hide() 효과 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_15 h4{padding:15px; background:#ffaaff;}
+			.test_15 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		&lt;/style&gt;
+		&lt;div class="test_15"&gt;
+			&lt;button type="button" class="hide-btn"&gt;이벤트 감추기&lt;/button&gt; 
+			&lt;button type="button" class="show-btn"&gt;이벤트 자세히 보기&lt;/button&gt;
+			&lt;h4&gt;최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)&lt;/h4&gt;
+			&lt;p&gt;주말 특가! 40% 파격 세일&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_15 h4{padding:15px; background:#ffaaff;}
+			    .test_15 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+			</style>
+			<div class="test_15">
+				<button type="button" class="hide-btn">이벤트 감추기</button> 
+				<button type="button" class="show-btn">이벤트 자세히 보기</button>
+				<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+				<p>주말 특가! 40% 파격 세일</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_16">
+			<h4 class="q_title">예제16)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 먼저 브라우저가 로딩되면서 모든 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)</p>
+			<p class="q_detail"><b>조건1.</b> 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 두개의 문단을 "보여주고", "감추기"를 구현하세요.(show(), hide() 효과 메서드를 이용)</p>
+			<p class="q_detail"><b>조건3.</b> 각각의 p 태그의 박스에는 클래스명별로 시간을 다르게 부여하세요.(".normal : 시간부여 없음 / .very-fast : 50 / .fast : 'fast' / .slow : 'slow' / very-slow : 2000 )</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_16 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		&lt;/style&gt;
+		&lt;div class="test_16"&gt;
+			&lt;button type="button" class="hide-btn"&gt;Hide Paragraphs&lt;/button&gt; 
+			&lt;button type="button" class="show-btn"&gt;Show Paragraphs&lt;/button&gt;
+			&lt;p class="normal"&gt;기본 속도 박스 보여주기/감추기&lt;/p&gt;
+			&lt;p class="very-fast"&gt;0.05초만에 박스 보여주기/감추기&lt;/p&gt;
+			&lt;p class="fast"&gt;문자 'fast'로 박스 보여주기/감추기&lt;/p&gt;
+			&lt;p class="slow"&gt;문자 'slow'로 박스 보여주기/감추기&lt;/p&gt;
+			&lt;p class="very-slow"&gt;2초만에 박스 보여주기/감추기&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+			    .test_16 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+			</style>
+			<div class="test_16">
+				<button type="button" class="hide-btn">Hide Paragraphs</button> 
+				<button type="button" class="show-btn">Show Paragraphs</button>
+				<p class="normal">기본 속도 박스 보여주기/감추기</p>
+				<p class="very-fast">0.05초만에 박스 보여주기/감추기</p>
+				<p class="fast">문자 'fast'로 박스 보여주기/감추기</p>
+				<p class="slow">문자 'slow'로 박스 보여주기/감추기</p>
+				<p class="very-slow">2초만에 박스 보여주기/감추기</p>
+			</div>
+		</div>
+
+<hr>
+		<div id="ex_17">
+			<h4 class="q_title">예제17)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)</p>
+			<p class="q_detail"><b>조건2.</b> 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 fade를 진행하면서 "보여주고", "감추기"를 구현하세요.(fadeIn(), fadeOut() 효과 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_17 h4{padding:15px; background:#ffaaff;}
+			.test_17 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		&lt;/style&gt;
+		&lt;div class="test_17"&gt;
+			&lt;button type="button" class="out-btn"&gt;fadeOut 효과주기&lt;/button&gt; 
+			&lt;button type="button" class="in-btn"&gt;fadeIn 효과주기&lt;/button&gt;
+			&lt;h4&gt;최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)&lt;/h4&gt;
+			&lt;p&gt;주말 특가! 40% 파격 세일&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_17 h4{padding:15px; background:#ffaaff;}
+			    .test_17 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+			</style>
+			<div class="test_17">
+				<button type="button" class="out-btn">fadeOut 효과주기</button> 
+				<button type="button" class="in-btn">fadeIn 효과주기</button>
+				<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+				<p>주말 특가! 40% 파격 세일</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_18">
+			<h4 class="q_title">예제18)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 먼저 브라우저가 로딩되면서 하단의 p 태그를 감추세요.(hide() 효과 메서드를 이용)</p>
+			<p class="q_detail"><b>조건2.</b> 두 개의 버튼을 클릭할 때 각각의 기능을 가진 효과 메서드를 부여하여 아래 p 태그의 문단을 slide를 진행하면서 "보여주고", "감추기"를 구현하세요.(slideDown(), slideUp() 효과 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_18 h4{padding:15px; background:#ffaaff;}
+			.test_18 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+		&lt;/style&gt;
+		&lt;div class="test_18"&gt;
+			&lt;button type="button" class="up-btn"&gt;slideUp 효과주기&lt;/button&gt; 
+			&lt;button type="button" class="down-btn"&gt;slideDown 효과주기&lt;/button&gt;
+			&lt;h4&gt;최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)&lt;/h4&gt;
+			&lt;p&gt;주말 특가! 40% 파격 세일&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_18 h4{padding:15px; background:#ffaaff;}
+			    .test_18 p{padding: 15px; background: #F0E68C;margin-bottom:4px;}
+			</style>
+			<div class="test_18">
+				<button type="button" class="up-btn">slideUp 효과주기</button> 
+				<button type="button" class="down-btn">slideDown 효과주기</button>
+				<h4>최신 이벤트(자세한 내용은 위의 버튼을 클릭하세요!)</h4>
+				<p>주말 특가! 40% 파격 세일</p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_19">
+			<h4 class="q_title">예제19)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> '오른쪽으로 이동시키기'라는 버튼을 클릭하면 이미지를 오른쪽으로 200px 이동하도록 설정하세요.(animate() 효과 메서드를 이용,  이동시간은 1초 부여할 것)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_19 img{position: relative;}
+		&lt;/style&gt;
+		&lt;div class="test_19"&gt;
+			&lt;button type="button"&gt;오른쪽으로 이동시키기&lt;/button&gt;
+			&lt;p&gt;
+				&lt;img src="img/mushroom.jpg" alt="Mushroom"&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_19 img{position: relative;}
+			</style>
+			<div class="test_19">
+				<button type="button">오른쪽으로 이동시키기</button>
+				<p>
+					<img src="img/mushroom.jpg" alt="Mushroom">
+				</p>
+			</div>
+		</div>
+
+<hr>
+
+		<h2>[문서 조작 메서드]</h2>
+		<div id="ex_20">
+			<h4 class="q_title">예제20)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 이미지를 클릭했을 때, 이미지 태그 내부에 있는 title의 속성값을 저장하고 그 값을 하단 p태그 내부의 내용에 출력하세요. (click() 이벤트와 attr() 메서드 및 text() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_20 img{width: 200px;}
+		&lt;/style&gt;
+		&lt;div class="test_20"&gt;
+			&lt;img src="img/kakaofriends.jpg" title="카카오프렌즈" alt="kakaofriends 이미지"&gt;
+			&lt;p class="img_name"&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_20 img{width: 200px;}
+			</style>
+			<div class="test_20">
+				<img src="img/kakaofriends.jpg" title="카카오프렌즈" alt="kakaofriends 이미지">
+				<p class="img_name"></p>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_21">
+			<h4 class="q_title">예제21)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 하단의 '이미지 변경하기' 버튼을 클릭했을 때, 이미지를 클릭했을 때, kakao_img2.jpg 이미지가 보여지도록 구성하세요. (click() 이벤트와 attr() 메서드 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_21 img{width: 120px;}
+		&lt;/style&gt;
+		&lt;div class="test_21"&gt;
+			&lt;button&gt;이미지 변경하기&lt;/button&gt;
+			&lt;img src="img/kakao_img1.jpg" alt="카카오프렌즈"&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_21 img{width: 120px;}
+			</style>
+			<div class="test_21">
+				<p><button>이미지 변경하기</button></p>
+				<img src="img/kakao_img1.jpg" alt="카카오프렌즈">
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_22">
+			<h4 class="q_title">예제22)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 각각의 버튼을 클릭했을 때 기존 이미지를 기준 좌우측으로 이미지가 새롭게 출력될 수 있도록 구성하세요. '좌측 이미지 추가' 클릭시 'wall_img1.jpg' / '우측 이미지 추가' 클릭시 'wall_img3.jpg' 출력. <br>(click() 이벤트와 prepend(), append() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_22 .img_frame{font-size:0;}
+			.test_22 img{width: 300px;}
+		&lt;/style&gt;
+		&lt;div class="test_22"&gt;
+			&lt;div class="btn_frame"&gt;
+				&lt;button class="left_add"&gt;좌측 이미지 추가&lt;/button&gt;
+				&lt;button class="right_add"&gt;우측 이미지 추가&lt;/button&gt;
+			&lt;/p&gt;
+			&lt;div class="img_frame"&gt;
+				&lt;img src="img/wall_img2.jpg" alt="카카오프렌즈"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_22 .img_frame{font-size:0;}
+				.test_22 img{width: 300px;}
+			</style>
+			<div class="test_22">
+				<div class="btn_frame">
+					<button class="left_add">좌측 이미지 추가</button>
+					<button class="right_add">우측 이미지 추가</button>
+				</p>
+				<div class="img_frame">
+					<img src="img/wall_img2.jpg" alt="카카오프렌즈">
+				</div>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_23">
+			<h4 class="q_title">예제23)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 각각의 버튼을 클릭했을 때 기존 이미지를 기준 좌우측으로 이미지가 새롭게 추가될 수 있도록 구성하세요. '좌측 이미지 넣기' 클릭시 'wall_img4.jpg' / '우측 이미지 넣기' 클릭시 'wall_img6.jpg' 출력. <br>(click() 이벤트와 before(), after() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_23 .img_frame{font-size:0;}
+			.test_23 img{width: 300px;}
+		&lt;/style&gt;
+		&lt;div class="test_23"&gt;
+			&lt;div class="btn_frame"&gt;
+				&lt;button class="before_add"&gt;좌측 이미지 넣기&lt;/button&gt;
+				&lt;button class="after_add"&gt;우측 이미지 넣기&lt;/button&gt;
+			&lt;/p&gt;
+			&lt;div class="img_frame"&gt;
+				&lt;img id="kakao" src="img/wall_img5.jpg" alt="카카오프렌즈"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_23 .img_frame{font-size:0;}
+				.test_23 img{width: 300px;}
+			</style>
+			<div class="test_23">
+				<div class="btn_frame">
+					<button class="before_add">좌측 이미지 넣기</button>
+					<button class="after_add">우측 이미지 넣기</button>
+				</p>
+				<div class="img_frame">
+					<img id="kakao" src="img/wall_img5.jpg" alt="카카오프렌즈">
+				</div>
+			</div>
+		</div>
+
+<hr>
+
+		<h2>[문서 조작 메서드 - class 추가, 삭제, 확인]</h2>
+		<div id="ex_24">
+			<h4 class="q_title">예제24)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 각각의 버튼을 클릭했을 때 클래스(클래스명 : effect)를 추가 또는 삭제하여 기존 이미지에 효과를 부여 또는 제거가 될 수 있도록 구성하세요. <br>(click() 이벤트와 addClass(), removeClass() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+				.test_24 img{width: 300px; margin:20px; transition:1s;}
+				.test_24 img.effect{box-shadow:0 0 8px #55ffff;}
+		&lt;/style&gt;
+		&lt;div class="test_24"&gt;
+			&lt;div class="btn_frame"&gt;
+				&lt;button class="effect_add"&gt;효과 넣기&lt;/button&gt;
+				&lt;button class="effect_remove"&gt;효과 빼기&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="img_frame"&gt;
+				&lt;img id="band" src="img/kakao_band.jpg" alt="카카오밴드"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_24 img{width: 300px; margin:20px; transition:1s;}
+				.test_24 img.effect{box-shadow:0 0 8px #55ffff;}
+			</style>
+			<div class="test_24">
+				<div class="btn_frame">
+					<button class="effect_add">효과 넣기</button>
+					<button class="effect_remove">효과 빼기</button>
+				</div>
+				<div class="img_frame">
+					<img id="band" src="img/kakao_band.jpg" alt="카카오밴드">
+				</div>
+			</div>
+		</div>
+
+<hr>
+
+		<div id="ex_25">
+			<h4 class="q_title">예제25)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 하단의 버튼을 클릭했을 때 기존 이미지에서 effect 클래스 유무를 판단(if~else 조건문 구성) 후, 클래스(클래스명 : effect)를 추가 또는 삭제를 통해 효과를 부여 또는 제거가 될 수 있도록 구성하세요. <br>(click() 이벤트와 hasClass(), addClass(), removeClass() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_25 img{width: 300px; margin:20px; transition:1s;}
+			.test_25 img.effect{box-shadow:0 0 8px #ffff00;}
+		&lt;/style&gt;
+		&lt;div class="test_25"&gt;
+			&lt;div class="btn_frame"&gt;
+				&lt;button class="effect_confirm"&gt;효과 적용 및 삭제&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="img_frame"&gt;
+				&lt;img id="refresh" src="img/kakao_refresh.jpg" alt="카카오 한강 나들이"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_25 img{width: 300px; margin:20px; transition:1s;}
+				.test_25 img.effect{box-shadow:0 0 8px #ffff00;}
+			</style>
+			<div class="test_25">
+				<div class="btn_frame">
+					<button class="effect_confirm">효과 적용 및 삭제</button>
+				</div>
+				<div class="img_frame">
+					<img id="refresh" src="img/kakao_refresh.jpg" alt="카카오 한강 나들이">
+				</div>
+			</div>
+		</div>
+
+<hr>
+
+		<h2>[콜백함수]</h2>
+
+
+
+		<div id="ex_26">
+			<h4 class="q_title">예제26)아래 조건을 읽고 조건에 부합하도록 jQuery를 작성하세요.</h4>
+			<p class="q_detail"><b>조건1.</b> 첫번째 이미지를 제외한 나머지 이니지를 모두 감추세요.(not(특정 선택자) 메서드, eq() 메서드와 hide() 메서드 이용)</p>
+			<p class="q_detail"><b>조건2.</b> 하단의 버튼을 클릭했을 때 우측으로 페이드인 효과를 적용하여 시간간격(1초) 각 이미지가 순차적으로 나올 수 있도록 구성하세요. <br>(click() 이벤트와 콜백함수, fadeIn() 메서드를 이용)</p>
+
+	<pre class="q_txt">
+		&lt;style&gt;
+			.test_26 .img_frame{font-size:0;}
+			.test_26 img{width: 200px;}
+		&lt;/style&gt;
+		&lt;div class="test_26"&gt;
+			&lt;div class="btn_frame"&gt;
+				&lt;button class="fadein_img"&gt;차례대로 보여주기&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class="img_frame"&gt;
+				&lt;img src="img/kakao_bg1.jpg" alt="카카오 배경1"&gt;
+				&lt;img src="img/kakao_bg2.jpg" alt="카카오 배경2"&gt;
+				&lt;img src="img/kakao_bg3.jpg" alt="카카오 배경3"&gt;
+				&lt;img src="img/kakao_bg4.jpg" alt="카카오 배경4"&gt;
+				&lt;img src="img/kakao_bg5.jpg" alt="카카오 배경5"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	</pre>
+			<style>
+				.test_26 .img_frame{font-size:0;}
+				.test_26 img{width: 200px;}
+			</style>
+			<div class="test_26">
+				<div class="btn_frame">
+					<button class="fadein_img">차례대로 보여주기</button>
+				</div>
+				<div class="img_frame">
+					<img src="img/kakao_bg1.jpg" alt="카카오 배경1">
+					<img src="img/kakao_bg2.jpg" alt="카카오 배경2">
+					<img src="img/kakao_bg3.jpg" alt="카카오 배경3">
+					<img src="img/kakao_bg4.jpg" alt="카카오 배경4">
+					<img src="img/kakao_bg5.jpg" alt="카카오 배경5">
+				</div>
+			</div>
+		</div>
+
+<hr>
+
+	</body>
+</html>
