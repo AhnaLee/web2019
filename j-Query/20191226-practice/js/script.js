@@ -117,10 +117,10 @@ $(document).ready(function(){
     });
 
     $(".left_add").click(function(){
-        $(".test_22 .img_frame").append("<img src='img/wall_img3.jpg'>");
+        $(".test_22 .img_frame").prepend("<img src='img/wall_img1.jpg'>");
     });
     $(".right_add").click(function(){
-        $(".test_22 .img_frame").prepend("<img src='img/wall_img1.jpg'>");
+        $(".test_22 .img_frame").append("<img src='img/wall_img3.jpg'>");
     });
 
     $(".before_add").click(function(){
