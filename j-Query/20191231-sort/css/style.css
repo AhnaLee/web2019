@@ -37,6 +37,13 @@ a{text-decoration: none;}
 .pd_frame .pd_box .pd_info .fav{text-align:right; font-size: 14px;}
 .pd_frame .pd_box .pd_info .fav span{color: #ff0000;}
 
+.pager{width: 100%; height: auto; padding: 20px 0;}
+.pager ul{text-align:center;}
+.pager ul li{display: inline-block;padding:0 5px; border-left: 1px solid #ccc; font-size: 13px;color: #777;}
+.pager ul li:first-child {border: none;}
+
+
+.pager ul li.active{color: #ff0000;}
 
 
 
