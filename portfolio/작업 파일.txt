@@ -1,0 +1,22 @@
+index.html (로딩 화면 - 시간차 이후 main.html로 이동)
+header.html (로드 이벤트)
+footer.html (로드 이벤트)
+main.html
+intro.html
+work.html
+contact.html
+<css 폴더 내부>
+common.css
+main.css
+intro.css
+work.css + masonry.css
+contact.css
+<js 폴더 내부>
+common.js
+main.js
+intro.js
+work.js  + masonry.js
+contact.js
+
+
+
