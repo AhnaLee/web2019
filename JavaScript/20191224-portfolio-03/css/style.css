@@ -29,6 +29,26 @@ a{text-decoration: none;}
 
 .main_title {width: 100%;position: absolute;top:50%;text-align: center;color:#fff ;}
 
+#section_01{width: 100%;height: 660px;background-image: url(../img/section_deco_left.png), url(../img/section_deco_right.png);
+	background-size: 160px auto, 160px auto;background-position: 0% 36%, 100% bottom;
+	background-attachment: fixed,fixed;background-repeat: no-repeat, no-repeat;overflow: hidden;}
+#section_01 .cont-01{width:1200px;height: 100%;margin: 0 auto; padding:60px 0;}
+#section_01 .cont-01 .txt-box {width: 180px;height: auto;position: relative;}
+#section_01 .cont-01 .txt-box p{border-left: 4px solid #777;padding-left:10px;line-height: 1;
+	font-weight: bold;transform: rotate(90deg);
+	transform-origin:left bottom;display: inline-block;}
+#section_01 .cont-01 .box-frame {width: 981px;height: 580px;margin: 0 auto;} 
+#section_01 .cont-01 .content_box {width: 1020px;height: 200px;margin: 0 auto; font-size:0;}
+#section_01 .cont-01 .content_box .cont_img{display:inline-block; width:20%; vertical-align:middle;}
+#section_01 .cont-01 .content_box img{  margin-right: 80px;}
+#section_01 .cont-01 .content_box .txt_wrap{display:inline-block; width:80%; vertical-align:middle;}
+#section_01 .cont-01 .content_box h3{font-size:20px;}
+#section_01 .cont-01 .content_box .hr_line{width: 80px;height: 1px;background-color: #ce967a;margin:10px 0;}
+#section_01 .cont-01 .content_box p{position: relative; font-size:17px;}
+#section_01 .cont-01 .content_box a{position: absolute;right: 0; font-size:17px;color: #ce967a}
+
+
+
 
 
 
