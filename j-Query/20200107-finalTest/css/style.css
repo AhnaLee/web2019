@@ -1,0 +1,73 @@
+@charset 'utf-8';
+/*common css*/
+*{-webkit-box-sizing : border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body{ margin: 0; padding: 0; }
+header, section, article, aside, nav, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, footer:after {content:""; display: block;clear: both;}
+ul,ol{margin:0;padding: 0;list-style: none;}
+h1,h2,h3,h4,h5,h6, p{margin: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+#test_01{width: 600px;height: 60px;}
+#test_01 .menu{font-size: 16px;color: #fff;}
+
+#test_01 ul {}
+#test_01 ul li{width: 25%;height: 60px;float: left;background-position:50% 50%;
+background-size: cover;}
+#test_01 ul li a{display: block;line-height: 60px;text-align: center; color: #fff;}
+#test_01 ul li:after {content: ""; display: block; clear: both;}
+#test_01 ul li .dark-bg{width: 100%;height: 100%;background-color: rgba(0,0,0,0.5); transition:background-color 0.5s;}
+#test_01 ul li:hover .dark-bg{background-color: rgba(150,150,0,0.75);}
+
+#test_02 {width: 1200px;height: 380px;}
+#test_02 .tab_btn{width: 100%;height: 60px;position: relative;}
+#test_02 .tab_btn .bg-bk{width: 33.33%;height: 100%;background:#000;position: absolute;left: 0;top: 0;
+z-index: -1;}
+#test_02 .tab_btn:after {content: ""; display: block;clear: both;}
+#test_02 .tab_btn>div {width: 33.33%; text-align: center; line-height: 60px;float: left;}
+#test_02 .tab_btn .activeBtn{width:33.33%;height: 100%;color:#fff;}
+
+#test_02 .tab_box {width: 100%; height: 320px;border: 1px solid #777;}
+#test_02 .tab_box>div {width:100%; height: 100%; display: none;}
+#test_02 .tab_box>div.activeBox {display: block;}
+#test_02 .tab_box .img, #test_02 .tab_box .context{width:50%;height: 100%;float: left;}
+#test_02 .tab_box .img {background-size: cover; background-position:50% 0;}
+#test_02 .tab_box .context{display: table;}
+#test_02 .tab_box .context .table_center{display: table-cell;text-align: center;vertical-align: middle;}
+#test_02 .tab_box .context .table_center h4{font-size: 20px;color: #555;}
+#test_02 .tab_box .context .table_center h6{font-size: 16px;color: #999;}
+#test_02 .tab_box .context .table_center p{font-size: 14px;color: #777;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#test_03 {width: 1000px;height: 600px;}
+#test_03 .slider{}
+#test_03 .slider li{}
+#test_03 .slider li a{}
+
+#test_03 .pager {}
+#test_03 .pager .slide_num{}
+*/
+
+
+
+
+
+
+
+
