@@ -40,30 +40,24 @@ z-index: -1;}
 #test_02 .tab_box .context .table_center p{font-size: 14px;color: #777;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#test_03 {width: 1000px;height: 600px;}
-#test_03 .slider{}
-#test_03 .slider li{}
+#test_03 {width: 1000px;height: 600px; margin: 0 auto; position: relative;}
+#test_03 .slider{width: 100%;height: 100%;}
+#test_03 .slider li{width: 100%; height: 100%;position: absolute;top: 0;left: 0;
+	background-size: cover;}
+#test_03 .slider li.act_img{z-index: 1;}
+#test_03 .slider li:nth-child(1){background-image:url(../img/slide_01.jpg);}
+#test_03 .slider li:nth-child(2){background-image:url(../img/slide_02.jpg);}
+#test_03 .slider li:nth-child(3){background-image:url(../img/slide_03.jpg);}
+#test_03 .slider li:nth-child(4){background-image:url(../img/slide_04.jpg);}
 #test_03 .slider li a{}
 
-#test_03 .pager {}
-#test_03 .pager .slide_num{}
-*/
+#test_03 .pager {position: absolute;bottom: 10px; left: 0;width: 100%;height:8px; z-index: 3;}
+#test_03 .pager ol{text-align: center; font-size: 0;}
+#test_03 .pager ol li{display: inline-block; margin: 0 4px; 
+	width: 30px;height: 8px;background: #aaa;border-radius: 2px; 
+	cursor:pointer; transition: width 0.5s, background 0.5s;}
 
+#test_03 .pager ol li.act_btn{width: 50px;background: #ffaaff;}
 
 
 

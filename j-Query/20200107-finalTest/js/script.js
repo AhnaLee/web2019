@@ -48,23 +48,28 @@ $(document).ready(function(){
 		$("#test_02 .tab_box>div").eq($index).addClass("activeBox");
 		$(".bg-bk").animate({"left":33.33*$index+"%"},500);
 	});
-	
-
-
-
-
-
-
-
-
 
 	//Question 03
 
-	// var $slide_arr = [
-	// 	{$pic:"img/slide_01.jpg"},
-	// 	{$pic:"img/slide_02.jpg"},
-	// 	{$pic:"img/slide_03.jpg"},
-	// 	{$pic:"img/slide_04.jpg"}
-	// ]
-	// var 
+	//첫번째 방법 (속성선택자 rel)
+	// $(".slide_num li").click(function(){
+	// 	var $sel_btn = $(this).attr("rel");
+
+	// 	$(".slider li").removeClass("act_img");
+	// 	$(".slider li[data-rel='"+$sel_btn+"']").addClass("act_img");
+	// 	// li[data-rel='"+$sel_btn+"']<속성 선택자.
+	// 	$(".slide_num li").removeClass("act_btn");
+	// 	$(this).addClass("act_btn");
+	// });
+
+	//두번째 방법 (index)
+
+	$(".slide_num li").click(function(){
+		var $sel_index = $(this).index();
+		$(".slider li").removeClass("act_img");
+		$(".slider li").eq($sel_index).addClass("act_img");
+
+		$(".slide_num li").removeClass("act_btn");
+		$(this).addClass("act_btn");
+	});
 });
