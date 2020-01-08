@@ -179,6 +179,7 @@
 			color: #1651b9;
 			font-size: 4em;
 		}
+		/* 핫 링크 */
 		#sec_wrap .container_wrap li.icon_box {}
 		#sec_wrap .container_wrap li.icon_box h2 {
 			width: 150px;
@@ -208,7 +209,7 @@
 			margin: 0 auto;
 			margin-bottom: 10px;
 		}
-		
+		/* 공지사항 */
 		#sec_wrap .container_wrap li.notice_wrap h2 {
 			width: 150px;
 			height: 40px;
@@ -216,7 +217,6 @@
 			margin: 20px 0 0 25px;
 			font-size: 1.3em;
 		}
-		#sec_wrap .container_wrap li.notice_wrap{}
 		#sec_wrap .container_wrap li.notice_wrap>div.notice_line {
 			width: 260px;
 			height: 2px;
@@ -224,8 +224,6 @@
 			margin: 0 auto;
 			margin-bottom: 25px;
 		}
-		#sec_wrap .container_wrap div.notice_box {}
-		#sec_wrap .container_wrap div.notice_box ul{}
 		#sec_wrap .container_wrap div.notice_box ul li{
 			color: #fff;
 			font-size: 12px;
@@ -238,7 +236,7 @@
 			right: 20px;
 		}
 
-		
+		/* SNS NEWS */
 		#sec_wrap .container_wrap li.news_wrap h2 {
 			width: 150px;
 			height: 20px;
@@ -276,6 +274,8 @@
 		}
 		#sec_wrap .container_wrap div.news_btn a {}
 
+		/* 캠퍼스 안내 */
+
 		#sec_wrap .container_wrap li.campus{position: relative;}
 		#sec_wrap .container_wrap li.campus p{
 			width: 100%;
@@ -289,6 +289,8 @@
 			position: absolute;
 			bottom: 0;}
  
+ 		/* 동영상 박스 */
+
 		#sec_wrap .container_wrap div.box_07 {
 			position: absolute;
 			width: 65px;
@@ -297,6 +299,9 @@
 			margin-top:-32px;
 			margin-left:-32px;
 		}
+
+		/* 마지막 슬라이더 영역 */
+
 		#sec_wrap .container_wrap div.txt_wrap {
 
 		}
@@ -326,6 +331,9 @@
 			font-size: 13px;
 			color: #fff
 		}
+
+		/* 티커 부분 */
+
 		#sec_wrap div.ticker_wrap {
 			width: 1200px;
 			height: 60px;
@@ -373,11 +381,6 @@
 
 
 
-
-
-
-
-
 		/*슬라이더 수정 */
 
 		.bx-wrapper {
@@ -416,6 +419,7 @@
 		}
 
 		/*footer area*/
+		
 		footer#footer {
 			width: 100%;
 		}
